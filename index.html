@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body>
@@ -20,13 +20,18 @@
 
     <header class="page-header">
       <div class="container">
-<div class="notification"> <p class="not">Гарантированная доставка к Рождеству | Режим работы наших магазинов по воскресеньям.</p></div>
+<div class="notification"> 
+  <span>Гарантированная доставка к Рождеству | Режим работы наших магазинов по воскресеньям.</span>
+        <span>Ознакомится <svg class="icon-contact" width="16" height="16">
+          <use href="./image/symbol-defs.svg#icon-phone"></use>
+        </svg></span>   
+</div>
 
-        <div>
+        <div class="main-nav">
+          
             <div class="item">
-              <a href="tell:+380800757047" class="">0 800 757 047</a>
+              <a class="link" href="tell:+380800757047" class="">0 800 757 047</a>
             </div>
-
 
           <nav>
             <ul class="nav-list list">
@@ -41,18 +46,15 @@
             </ul>
           </nav>
 
-          <div>
-            <ul class="contact-list list">
+          <div class="help">
+            <ul class="help-list list">
               <li class="item"><a class="link" href="">Персональный менеджер</a></li>
-              <li class="item"><a href="" class="contact">
-                  <svg class="icon-contact" width="16" height="16">
+              <li class="item"><a class="link" href="">
+                  Рус <svg class="icon-contact" width="16" height="16">
                     <use href="./image/symbol-defs.svg#icon-phone"></use>
-                  </svg>
-                  Рус</a></li>
+                  </svg></a></li>
             </ul>
           </div>
-
-
         </div>
 
 

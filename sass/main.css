@@ -2,44 +2,20 @@
 body {
   background-color: #ffffff;
   color: #212121;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   font-family: Roboto, sans-serif;
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1439px) {
   .container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-@media screen and (max-width: 1199px) {
-  .section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    max-width: 1440px;
   }
 }
 
@@ -49,13 +25,13 @@ img {
   height: auto;
 }
 
-.nav-list, .page-header .contact-list {
+.nav-list, .help-list {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-.nav-list .link {
+.main-nav .link {
   text-decoration: none;
 }
 
@@ -63,312 +39,85 @@ img {
 .page-header {
   min-height: 60px;
   margin-bottom: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header {
-    height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .page-header .container {
+  display: block;
+  height: 248px;
+}
+
+.notification {
+  background-color: #ff6869;
+  font-family: Open-Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  padding: 11px 0 11px 0;
+  margin-bottom: 15px;
+}
+
+.notification span {
+  margin: 0;
+}
+
+.notification span:not(:last-child) {
+  margin-right: 15px;
+}
+
+.notification svg {
+  margin-left: 5px;
+}
+
+.main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 60px;
-  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid #efeded;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-@media screen and (min-width: 768px) {
-  .page-header .container {
-    height: 80px;
-  }
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .main-nav .item:not(:last-child) {
-    margin-right: 50px;
-  }
+.nav-list .item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.help-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.help-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.help-list svg {
+  margin-left: 5px;
 }
 
 /* оформляет логотип */
-.site-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    margin-right: 81px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    min-width: 148px;
-    font-size: 26px;
-    line-height: 1.19;
-    margin-right: 85px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-}
-
-.site-logo span {
-  color: #2196f3;
-}
-
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  fill: #212121;
-}
-
-.menu-button .close {
-  display: none;
-}
-
-.menu-button.is-open .close {
-  display: block;
-}
-
-.menu-button.is-open .open {
-  display: none;
-}
-
-.menu-button:hover, .menu-button:focus {
-  fill: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
-
-/* оформляет навигацию */
-@media screen and (max-width: 767px) {
-  .navigate-menu {
-    background-color: #ffffff;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .navigate-menu.is-open {
-    display: block;
-    z-index: 2;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .navigate-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigate-menu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .nav-list {
-    margin-bottom: 60px;
-  }
-  .nav-list .item:not(:last-child) {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.nav-list .link {
-  display: inline-block;
-  color: #212121;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.14;
-}
-
-@media screen and (min-width: 768px) {
-  .nav-list .link {
-    font-size: 14px;
-    position: relative;
-    padding-top: 33px;
-    padding-bottom: 33px;
-  }
-}
-
-.link.current {
-  color: #2196f3;
-}
-
-.link.current::after {
-  content: '';
-  opacity: 1;
-  display: block;
-  bottom: 0;
-  cursor: pointer;
-  width: 100%;
-  height: 4px;
-  margin-top: 8px;
-  background-color: #2196f3;
-  background-size: auto;
-  border-radius: 2px;
-}
-
-@media screen and (min-width: 768px) {
-  .link.current::after {
-    position: absolute;
-  }
-}
-
 /* оформляет контакты */
-@media screen and (min-width: 768px) {
-  .page-header .contact-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: 84px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header .contact-list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin-left: 305px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-
-.contact-list .item + .item {
-  margin-top: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .contact-list .item + .item {
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact-list .item + .item {
-    margin-left: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-.page-header .contact {
-  color: #757575;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.14px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-header .contact:hover {
-  color: #2196f3;
-}
-
-.page-header .contact:focus {
-  color: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header .contact {
-    font-size: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header .contact {
-    font-size: 14px;
-  }
-}
-
-.icon-contact {
-  fill: currentColor;
-  margin-right: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .icon-contact {
-    margin-right: 10px;
-  }
-}
 /*# sourceMappingURL=main.css.map */
