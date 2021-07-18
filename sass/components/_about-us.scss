@@ -1,0 +1,25 @@
+.about-us {
+  background-color: #f2efec;
+  height: 1200px;
+  padding: 171px 110px 171px 110px;
+}
+.description {
+  width: 437px;
+  height: 264px;
+  padding-top: 83px;
+
+  h1 {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #28292f;
+    margin: 0;
+
+    span {
+      border-top: 1px solid black;
+      padding-top: 83px;
+    }
+  }
+}

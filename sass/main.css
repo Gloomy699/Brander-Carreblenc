@@ -3,20 +3,15 @@ body {
   background-color: #ffffff;
   color: #212121;
   letter-spacing: 0.01em;
-  font-family: Roboto, sans-serif;
+  font-family: Open Sans;
 }
 
 .container {
+  max-width: 1520px;
   padding-left: 40px;
   padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (min-width: 1439px) {
-  .container {
-    max-width: 1440px;
-  }
 }
 
 img {
@@ -25,13 +20,13 @@ img {
   height: auto;
 }
 
-.nav-list, .help-list {
+.nav-list, .help-list, .user-navigation-list, .market-navigate-list, .idea-list, .best-deal-list {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-.main-nav .link {
+.notification .link, .main-nav .link, .nav-list .link, .user-menu .link, .market-navigate-list .link, .idea-list .link {
   text-decoration: none;
 }
 
@@ -50,12 +45,6 @@ img {
 
 .notification {
   background-color: #ff6869;
-  font-family: Open-Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.01em;
   height: 40px;
   text-align: center;
   color: #ffffff;
@@ -64,6 +53,12 @@ img {
 }
 
 .notification span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
   margin: 0;
 }
 
@@ -73,6 +68,18 @@ img {
 
 .notification svg {
   margin-left: 5px;
+  vertical-align: middle;
+}
+
+.notification .link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin: 0;
+  color: #ffffff;
 }
 
 .main-nav {
@@ -86,6 +93,18 @@ img {
   border-bottom: 1px solid #efeded;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 16px;
+}
+
+.main-nav .link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #28292f;
 }
 
 .nav-list {
@@ -116,8 +135,276 @@ img {
 
 .help-list svg {
   margin-left: 5px;
+  vertical-align: middle;
 }
 
-/* оформляет логотип */
-/* оформляет контакты */
+.user-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.user-menu .link {
+  color: #28292f;
+}
+
+.user-menu svg {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.user-menu input {
+  background-color: transparent;
+  border: 0px solid;
+}
+
+.user-navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-navigation-list .link {
+  position: relative;
+}
+
+.user-navigation-list .link .user-nav-icon {
+  position: absolute;
+  top: -35px;
+  left: 30%;
+}
+
+.user-navigation-list .item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.market-navigate {
+  margin-top: 25px;
+}
+
+.market-navigate-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: Prata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+.market-navigate-list .link {
+  color: #28292f;
+}
+
+.market-navigate-list .item:not(:first-child) {
+  padding-left: 20px;
+}
+
+.market-navigate-list .item:not(:last-child) {
+  border-right: 1px solid #efeded;
+  padding-right: 20px;
+}
+
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero-bg {
+  max-width: 1360px;
+  height: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/main_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.hero-sell {
+  width: 385px;
+  height: 290px;
+  background-color: #fff;
+  position: absolute;
+  left: 60px;
+  top: 95px;
+  padding: 40px;
+  color: #28292f;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.hero-sell h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.hero-sell h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-family: Prata;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.hero-sell span {
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.hero-sell button {
+  font-family: Open Sans;
+  text-transform: uppercase;
+  width: 166px;
+  height: 40px;
+  display: block;
+  margin-top: 25px;
+  background-color: #fff;
+  border: 1px solid #efeded;
+  border-radius: 2px;
+}
+
+.idea-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.idea-list .link {
+  font-family: Prata;
+  color: #858791;
+}
+
+.idea-list .item:not(:first-child) {
+  padding-left: 20px;
+}
+
+.idea-list .sqad-icon {
+  color: currentColor;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.idea-list .link:hover,
+.idea-list .link:focus {
+  color: black;
+}
+
+.about-us {
+  background-color: #f2efec;
+  height: 1200px;
+  padding: 171px 110px 171px 110px;
+}
+
+.description {
+  width: 437px;
+  height: 264px;
+  padding-top: 83px;
+}
+
+.description h1 {
+  font-family: Prata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #28292f;
+  margin: 0;
+}
+
+.description h1 span {
+  border-top: 1px solid black;
+  padding-top: 83px;
+}
+
+.best-deal {
+  margin-bottom: 130px;
+}
+
+.best-deal-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.best-deal-list .item {
+  width: 240px;
+  padding-bottom: 31px;
+}
+
+.best-deal-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.best-deal-list img {
+  margin-bottom: 15px;
+  width: 240px;
+}
+
+.best-deal-list span {
+  display: block;
+  vertical-align: middle;
+  color: #28292f;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.best-deal-list .description {
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.best-deal-list .price {
+  font-family: Prata;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.best-deal-list .old-price {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,50 @@
+.best-deal {
+  margin-bottom: 130px;
+}
+.best-deal-list {
+  display: flex;
+  justify-content: center;
+  @extend %list;
+
+  .item {
+    width: 240px;
+    padding-bottom: 31px;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  img {
+    margin-bottom: 15px;
+    width: 240px;
+  }
+  span {
+    display: block;
+    vertical-align: middle;
+    color: #28292f;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .description {
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-family: Prata;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .old-price {
+    font-size: 12px;
+    line-height: 18px;
+
+    letter-spacing: 0.01em;
+    text-decoration: line-through;
+    color: #a9a9a9;
+  }
+}
