@@ -1,0 +1,50 @@
+.blog {
+  width: 1104px;
+  height: 630px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-title {
+  text-align: center;
+  font-family: Prata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+
+  span {
+    border-top: 1px solid black;
+    padding-top: 30px;
+  }
+}
+
+.main-news {
+  width: 542px;
+  height: 500px;
+  background-color: #f2efec;
+  display: block;
+  margin-right: 30px;
+}
+.main-news-content {
+  padding: 30px 31px 40px 35px;
+}
+
+.news-date {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+  letter-spacing: 0.01em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.news-description {
+  font-family: Prata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+}

@@ -1,0 +1,53 @@
+.personal-offer {
+  max-width: 1360px;
+  height: 500px;
+  background-color: #aeece2;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 78px 776px 79px 214px;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.personal-offer_content {
+  width: 370px;
+  height: 345px;
+  text-align: center;
+
+  h1 {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+  }
+  button {
+    margin-top: 30px;
+    background-color: $accent-color;
+    color: white;
+  }
+  button:hover,
+  button:focus {
+    background-color: white;
+    color: $accent-color;
+  }
+}
+
+.personal-offer_image {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}

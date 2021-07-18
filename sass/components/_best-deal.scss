@@ -21,19 +21,20 @@
   }
   span {
     display: block;
-    vertical-align: middle;
     color: #28292f;
     text-align: center;
     font-style: normal;
     font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .description {
+
+  .deal-description {
     font-family: Open Sans;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 15px;
   }
-
   .price {
     font-family: Prata;
     font-size: 20px;
