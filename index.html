@@ -26,6 +26,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./sass/owl.carousel.min.css">
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
@@ -123,14 +124,13 @@
 
     <main class="container">
 
-
           <section class="hero section">
             <div class="hero-bg">
               <div class="hero-sell">
                 <h1>Акция</h1>
                 <h2>-20% на всё постельно белье</h2>
                 <span>акция действует до 3 декабря 2020</span>
-                <button><span>Подробнее</span></button>
+                <button class="button"><span>Подробнее</span></button>
               </div>
             </div>
             <div class="idea">
@@ -197,9 +197,9 @@
             <div class="about-us-upper">
           
               <div class="about-us-description">
+                <div class="border"></div>
                 <h1>
-                  <span>Carré</span>
-                  Blanc специализируется на производстве высококачественного домашнего текстиля
+                  Carré Blanc специализируется на производстве высококачественного домашнего текстиля
                 </h1>
               </div>
           
@@ -232,7 +232,7 @@
               <div class="about-us-inner">
                 <h1>Вдохновение</h1>
                 <h2>Добавьте экзотики в вашу спальню</h2>
-                <button>Подробнее</button>
+                <button class="button"><span>Подробнее</span></button>
               </div>
           
             </div>
@@ -241,7 +241,7 @@
                 <div class="inner">
                   <h1>акция</h1>
                   <h2>1+1 на все товары для ванной комнаты</h2>
-                  <button>Подробнее</button>
+                  <button class="button"><span>Подробнее</span></button>
                 </div>
           
           
@@ -250,12 +250,12 @@
                 <div class="inner">
                   <h1>идеи подарков</h1>
                   <h2>Нет идей подарков на Новый год?</h2>
-                  <button>Подробнее</button>
+                  <button class="button">Подробнее</button>
                 </div>
               </div>
             </div>
           
-          </section>          
+          </section>
           
           <section class="personal-offer section">
             <div class="personal-offer_content">
@@ -264,36 +264,100 @@
               </svg>
               <h1> Ваша индивидуальная вышивка</h1>
               <span>Сделайте уникальный подарок к празднику с нашей именной вышивкой</span>
-              <button>ПОДРОБНЕЕ</button>
+              <button class="button">подробнее</button>
             </div>
             <div class="personal-offer_image">
               <img class="deal-img" src="./img/boy_banner.svg" alt="">
           
             </div>
           </section>
+          
+          <section class="blog section">
+          
+            <div class="blog-title">
+              <div class="border"></div>
+              <h1> Советы и хитроситрости в блоге</h1>
+            </div>
+          
+            <div class="blog-news">
+          
+              <div class="main-news">
+                <img class="blog-img" src="/img/blog_img_1.jpeg" alt="">
+                <div class="main-news-content">
+                  <p class="news-date">24 декабря 2020</p>
+                  <span class="news-description">Идеи украшения праздничного стола и кухни</span>
+                </div>
+              </div>
+              <div class="blog-secondary-news">
+                <ul class="secondary-news-list">
+                  <li class="item">
+                    <img class="blog-img" src="/img/blog_img_2.jpeg" alt="">
+                    <div class="news-text-content">
+                      <span class="date">14 ноября 2020</span>
+                      <span>3 идеи завтрака, чтобы проснуться в хорошем настроении</span>
+          
+                    </div>
+                  </li>
+                  <li class="item">
+                    <img class="blog-img" src="/img/blog_img_3.jpeg" alt="">
+                    <div class="news-text-content">
+                      <span class="date">12 октября 2020</span>
+                      <span>Идеи украшения детской комнаты в стиле модерн</span>
+          
+                    </div>
+                  </li>
+                  <li class="item">
+                    <img class="blog-img" src="/img/blog_img_4.jpeg" alt="">
+                    <div class="news-text-content">
+                      <span class="date">2 марта 2020</span>
+                      <span>Советы по выбору домашнего текстиля в ванную комнату</span>
+          
+                    </div>
+                  </li>
+                </ul>
+                <button class="button">все статьи</button>
+              </div>
+            </div>
+          </section>
 
-                    <section class="blog section">
-                      <h1 class="blog-title"> Советы и х<span>итрос</span>итрости в блоге</h1>
-                    
-                      <div class="main-news">
-                        <img class="blog-img" src="/img/blog_img_1.jpeg" alt="">
-                        <div class="main-news-content">
-                          <p class="news-date">24 декабря 2020</p>
-                          <span class="news-description">Идеи украшения праздничного стола и кухни</span>
-                    
-                        </div>
-
-                        <div class="blog-news-list">
-                          <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </section>
+          <section class="insta-deal section">
+            <h1 class="insta-deal-title"><a class="link" href="">@carreblanc_ua</a></h1>
+            
+            <span class="insta-deal-description">Присоединяйтесь к сообществу и делитесь своими лучшими моментами с <a class="link" href="">@carreblancparis</a></span>
+          
+            <ul class="insta-deal-list owl-carousel" id="slider">
+              <li class="item"> <img class="insta-img" src="/img/insta_1.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_2.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_3.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_4.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_5.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_1.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_2.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_3.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_4.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="/img/insta_5.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+            
+            </ul>
+          </section>
 
     </main>
 
+    <footer class="container">
+
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/callCarousel.js"></script>
   </body>
 </html>

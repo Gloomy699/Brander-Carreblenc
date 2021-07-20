@@ -35,6 +35,7 @@
     display: block;
   }
   button {
+    @extend %button;
     margin-top: 30px;
     background-color: $accent-color;
     color: white;

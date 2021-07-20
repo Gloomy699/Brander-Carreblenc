@@ -22,7 +22,10 @@ body {
   //   max-width: 1440px;
   // }
 }
-
+.section {
+  margin-left: auto;
+  margin-right: auto;
+}
 // .section {
 //   padding-top: 94px;
 //   padding-bottom: 94px;
@@ -38,26 +41,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-button{
-  cursor: pointer;
-  font-family: Open Sans;
-  text-transform: uppercase;
-  font-size: 12px;
-  line-height: 18px;
-
-  width: 166px;
-  height: 40px;
-  vertical-align: middle;
-
-  margin-top: 25px;
-
-  background-color: #fff;
-  border: 1px solid #efeded;
-
-  border-radius: 2px;
-
-}
-button:focus,
-button:hover{
-    color: $accent-color;
+.button:focus,
+.button:hover {
+  color: $accent-color;
 }

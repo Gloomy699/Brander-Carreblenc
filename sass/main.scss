@@ -1,7 +1,7 @@
 @import './utils/variables';
 @import './utils/breakpoints';
 @import './utils/base';
-@import './utils/mixin';
+
 @import './utils/placeholders';
 @import './components/header';
 @import './components/page-hero';
@@ -9,8 +9,8 @@
 @import './components/about-us';
 @import './components/personal-offer';
 @import './components/page-blog';
+@import './components/insta-deal';
 
-@import './components/page-team';
 @import './components/footer';
 
 @import './components/backdrop';
