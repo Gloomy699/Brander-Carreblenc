@@ -1,0 +1,16 @@
+.advantage-list {
+  display: flex;
+  @extend %list;
+  justify-content: center;
+}
+
+.item {
+  .advantage-icon {
+    stroke: yellow;
+    // color: inherit;
+  }
+}
+
+.item:not(:last-child) {
+  margin-right: 45px;
+}
