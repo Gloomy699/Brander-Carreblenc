@@ -1,7 +1,7 @@
 /* оформляет хедер */
 
 .page-header {
-  min-height: 60px;
+  // min-height: 60px;
   margin-bottom: 0px;
   padding-left: 0;
   padding-right: 0;
@@ -12,7 +12,7 @@
 
 .notification {
   background-color: #ff6869;
-
+  width: auto;
   height: 40px;
   text-align: center;
   color: #ffffff;
@@ -52,6 +52,7 @@
     color: $primary-color;
   }
 }
+
 .main-nav {
   display: flex;
   justify-content: space-between;

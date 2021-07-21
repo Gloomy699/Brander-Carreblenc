@@ -36,7 +36,7 @@ img {
   padding: 0px;
 }
 
-.notification .link, .main-nav .link, .nav-list .link, .user-menu .link, .market-navigate-list .link, .idea-list .link, .direction-list .link, .insta-deal-title .link, .insta-deal-description .link, .banner-left .link, .banner-right .news-deal .link, .footer-menu .link, .e-mail, .Brander .link {
+.notification .link, .main-nav .link, .nav-list .link, .user-menu .link, .market-navigate-list .link, .idea-list .link, .direction-list .link, .insta-deal-title .link, .insta-deal-description .link, .advantage .item .link, .banner-left .link, .banner-right .news-deal .link, .footer-menu .link, .e-mail, .Brander .link {
   text-decoration: none;
 }
 
@@ -57,7 +57,6 @@ img {
 
 /* оформляет хедер */
 .page-header {
-  min-height: 60px;
   margin-bottom: 0px;
   padding-left: 0;
   padding-right: 0;
@@ -67,6 +66,7 @@ img {
 
 .notification {
   background-color: #ff6869;
+  width: auto;
   height: 40px;
   text-align: center;
   color: #ffffff;
@@ -908,6 +908,10 @@ img {
   right: -30px;
 }
 
+.advantage {
+  margin-bottom: 150px;
+}
+
 .advantage-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -917,12 +921,42 @@ img {
           justify-content: center;
 }
 
-.item .advantage-icon {
-  stroke: yellow;
-  color: inherit;
+.advantage .item {
+  display: block;
+  width: 220px;
+  text-align: center;
 }
 
-.item:not(:last-child) {
+.advantage .item .advantage-icon {
+  stroke: black;
+  fill: rgba(255, 255, 255, 0);
+}
+
+.advantage .item .link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #28292f;
+  letter-spacing: 0.01em;
+}
+
+.advantage .item .link:hover,
+.advantage .item .link:focus {
+  color: #ff6869;
+}
+
+.advantage .item .title {
+  font-family: Prata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.advantage .item .item:not(:last-child) {
   margin-right: 45px;
 }
 
@@ -939,6 +973,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 60px;
+  padding-top: 80px;
 }
 
 .banner-left {
@@ -1142,6 +1177,7 @@ img {
 
 .adress {
   margin-left: 80px;
+  max-width: 200px;
 }
 
 .city-adress {
@@ -1191,11 +1227,17 @@ img {
 }
 
 .pay-systems {
+  text-align: right;
   margin-left: 200px;
+}
+
+.pay-systems .item {
+  text-align: right;
 }
 
 .pay-systems .item:not(:last-child) {
   margin-bottom: 68px;
+  margin-right: 0;
 }
 
 .pay-systems .link {

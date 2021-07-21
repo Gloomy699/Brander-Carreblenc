@@ -2,10 +2,12 @@
   background-color: #f2efec;
   padding-bottom: 25px;
 }
+
 .footer-banner {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+  padding-top: 80px;
 }
 
 .banner-left {
@@ -213,6 +215,7 @@
 
 .adress {
   margin-left: 80px;
+  max-width: 200px;
 }
 
 .city-adress {
@@ -260,10 +263,15 @@
 }
 
 .pay-systems {
+  text-align: right;
   @extend %list;
   margin-left: 200px;
+  .item {
+    text-align: right;
+  }
   .item:not(:last-child) {
     margin-bottom: 68px;
+    margin-right: 0;
   }
   .link {
     fill: #a9a9a9;

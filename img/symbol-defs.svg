@@ -9,18 +9,18 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.3765" d="M16.654 30.842l0.681 0.781 0.645-0.781"></path>
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.3765" d="M18.662 30.061l13.267-15.413c0 0 6.096-6.747-1.434-12.429-5.665-4.262-10.291-0.107-12.263 2.202"></path>
 </symbol>
-<symbol id="icon-marcet" viewBox="0 0 34 32">
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M30.349 13.916v16.153c0 0.758-0.622 1.378-1.381 1.378h-23.651c-0.76 0-1.381-0.62-1.381-1.378v-16.187"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M0 31.481h34.286"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M2.486 11.23v-1.791l4.696-8.886h19.543l5.11 8.886v1.791"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M25.965 12.229v13.845c0 0.758-0.518 1.343-1.278 1.343h-14.916c-0.76 0-1.45-0.62-1.45-1.343v-13.845"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M18.092 19.496l5.179 5.511"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M21.545 20.185l2.21 2.48"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M2.486 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M8.356 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M14.225 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M20.095 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
-<path fill="" stroke="#28292f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M25.965 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
+<symbol id="icon-Group-511" viewBox="0 0 34 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M30.349 13.916v16.153c0 0.758-0.622 1.378-1.381 1.378h-23.651c-0.76 0-1.381-0.62-1.381-1.378v-16.187"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M0 31.481h34.286"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M2.486 11.23v-1.791l4.696-8.886h19.543l5.11 8.886v1.791"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M25.965 12.229v13.845c0 0.758-0.518 1.343-1.277 1.343h-14.916c-0.76 0-1.45-0.62-1.45-1.343v-13.845"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M18.092 19.496l5.179 5.511"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M21.545 20.184l2.21 2.48"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M2.486 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M8.356 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M14.225 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M20.095 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.381" d="M25.965 11.23c0 1.722 1.312 3.1 2.935 3.1s2.935-1.378 2.935-3.1"></path>
 </symbol>
 <symbol id="icon-crown" viewBox="0 0 43 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="0.4706" d="M3.32 31.529h36.654"></path>

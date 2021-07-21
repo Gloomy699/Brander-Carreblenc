@@ -1,16 +1,46 @@
+.advantage {
+  margin-bottom: 150px;
+}
 .advantage-list {
   display: flex;
   @extend %list;
   justify-content: center;
 }
 
-.item {
-  .advantage-icon {
-    stroke: yellow;
-    // color: inherit;
-  }
-}
+.advantage .item {
+  display: block;
+  width: 220px;
+  text-align: center;
 
-.item:not(:last-child) {
-  margin-right: 45px;
+  .advantage-icon {
+    stroke: rgb(0, 0, 0);
+    fill: rgba(255, 255, 255, 0);
+  }
+  .link {
+    @extend %link;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: $primary-color;
+    letter-spacing: 0.01em;
+  }
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
+
+  .title {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+
+    text-align: center;
+  }
+  .item:not(:last-child) {
+    margin-right: 45px;
+  }
 }
