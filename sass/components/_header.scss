@@ -184,14 +184,15 @@
 
 .backDrop {
   position: absolute;
-  top: 0;
+  top: 5%;
+  left: 2.8%;
   opacity: 0;
+  z-index: -2;
 
   padding: 90px 57px 79px 59px;
   align-items: center;
-  width: auto;
-  height: 100%;
-
+  width: 1360px;
+  height: 495px;
   background-color: yellow;
 
   margin: 0;
@@ -217,4 +218,5 @@
   opacity: 1;
   transform: translateY(185px);
   cursor: pointer;
+  z-index: 2;
 }
