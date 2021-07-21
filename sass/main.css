@@ -251,6 +251,44 @@ img {
   color: #ff6869;
 }
 
+.backDrop {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  padding: 90px 57px 79px 59px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 100%;
+  background-color: yellow;
+  margin: 0;
+  border: inherit;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.market-navigate-list .item:hover .backDrop,
+.market-navigate-list .item:focus .backDrop {
+  opacity: 1;
+  -webkit-transform: translateY(185px);
+          transform: translateY(185px);
+  cursor: pointer;
+}
+
 .hero {
   margin-bottom: 50px;
 }
