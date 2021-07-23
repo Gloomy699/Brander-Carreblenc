@@ -148,7 +148,6 @@
 .market-navigate {
   margin-top: 25px;
   position: relative;
-  // width: 1360px;
 }
 
 .market-navigate-list {
@@ -208,8 +207,8 @@
   margin: 0;
   border: inherit;
 
-  transform: translateY(505px);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(1005px);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .backdrop-list {
     padding: 0;
