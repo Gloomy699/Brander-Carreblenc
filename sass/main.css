@@ -373,8 +373,8 @@ img {
 .market-navigate-list .item:hover .backDrop,
 .market-navigate-list .item:focus .backDrop {
   opacity: 1;
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
   cursor: pointer;
   z-index: 2;
   -webkit-transition-delay: 300ms;
