@@ -15,18 +15,14 @@
   text-align: center;
 
   h1 {
-    font-family: Prata;
-    font-style: normal;
-    font-weight: normal;
+    @extend %secondary-text;
     font-size: 40px;
     line-height: 46px;
     margin-top: 25px;
     margin-bottom: 0;
   }
   span {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
+    @extend %main-text;
     font-size: 14px;
     line-height: 20px;
 

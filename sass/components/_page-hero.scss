@@ -7,9 +7,7 @@
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/main_banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @extend %bg-image;
   position: relative;
   margin-bottom: 120px;
 }
@@ -28,9 +26,7 @@
   font-weight: normal;
 
   h1 {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
+    @extend %main-text;
     font-size: 12px;
     line-height: 16px;
 
@@ -40,16 +36,14 @@
     margin-bottom: 10px;
   }
   h2 {
-    font-style: normal;
-    font-weight: normal;
-    font-family: Prata;
+    @extend %secondary-text;
     font-size: 32px;
     line-height: 38px;
     margin: 0;
     margin-bottom: 25px;
   }
   span {
-    font-family: Open Sans;
+    @extend %main-text;
 
     font-size: 12px;
     line-height: 18px;
@@ -68,19 +62,21 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  .item:not(:last-child) {
+    margin-right: 20px;
+  }
 
   @extend %list;
   .link {
-    font-family: Prata;
+    @extend %secondary-text;
     @extend %link;
     color: #858791;
   }
-  .item:not(:first-child) {
-    padding-left: 20px;
-  }
+
   .sqad-icon {
-    color: currentColor;
-    margin-left: 20px;
     vertical-align: middle;
   }
   .link:hover,

@@ -70,9 +70,7 @@
   margin: 0;
   border: inherit;
 
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
+  @extend %main-text;
   font-size: 12px;
   line-height: 18px;
 
