@@ -27,21 +27,22 @@ img {
   color: #ff6869;
 }
 
-.nav-list, .help-list, .user-navigation-list, .market-navigate-list, .backDrop .backdrop-list .item, .backDrop .backdrop-banner, .idea-list, .best-deal-list, .direction-list .item, .secondary-news-list, .insta-deal-list, .advantage-list, .soc-link, .pay-systems {
+.nav-list, .help-list, .user-navigation-list, .market-navigate-list, .backDrop .backdrop-list .item, .backDrop .backdrop-banner, .idea-list, .best-deal-list, .size-list .size-item, .direction-list .item, .secondary-news-list, .insta-deal-list, .advantage-list, .soc-link, .pay-systems {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-.notification .link, .main-nav .link, .nav-list .link, .user-menu .link, .market-navigate-list .link, .backDrop .backdrop-list .link, .idea-list .link, .direction-list .link, .insta-deal-title .link, .insta-deal-description .link, .advantage .item .link, .banner-left .link, .banner-right .news-deal .link, .hotLine .link, .footer-menu .link, .e-mail, .Brander .link {
+.notification .link, .main-nav .link, .nav-list .link, .user-menu .link, .link-upper, .market-navigate-list .link, .backDrop .backdrop-list .link, .idea-list .link, .direction-list .link, .insta-deal-title .link, .insta-deal-description .link, .advantage .item .link, .banner-left .link, .banner-right .news-deal .link, .hotLine .link, .footer-menu .link, .e-mail, .Brander .link {
   text-decoration: none;
 }
 
-.notification .link:hover, .main-nav .link:hover, .nav-list .link:hover, .user-menu .link:hover, .market-navigate-list .link:hover, .backDrop .backdrop-list .link:hover, .idea-list .link:hover, .direction-list .link:hover, .insta-deal-title .link:hover, .insta-deal-description .link:hover, .advantage .item .link:hover, .banner-left .link:hover, .banner-right .news-deal .link:hover, .hotLine .link:hover, .footer-menu .link:hover, .e-mail:hover, .Brander .link:hover,
+.notification .link:hover, .main-nav .link:hover, .nav-list .link:hover, .user-menu .link:hover, .link-upper:hover, .market-navigate-list .link:hover, .backDrop .backdrop-list .link:hover, .idea-list .link:hover, .direction-list .link:hover, .insta-deal-title .link:hover, .insta-deal-description .link:hover, .advantage .item .link:hover, .banner-left .link:hover, .banner-right .news-deal .link:hover, .hotLine .link:hover, .footer-menu .link:hover, .e-mail:hover, .Brander .link:hover,
 .notification .link :focus,
 .main-nav .link :focus,
 .nav-list .link :focus,
 .user-menu .link :focus,
+.link-upper :focus,
 .market-navigate-list .link :focus,
 .backDrop .backdrop-list .link :focus,
 .idea-list .link :focus,
@@ -79,7 +80,7 @@ img {
   background-size: cover;
 }
 
-.notification span, .notification .link, .main-nav .link, .backDrop .backdrop-list .link, .backDrop .backdrop-list .backdrop-title, .backDrop .backdrop-banner .backdrop-img-inner .link, .hero-sell h1, .hero-sell span, .best-deal-list .item .deal-description, .article, .direction-list .link, .about-us-inner h1, .inner h1, .personal-offer_content span, .news-date, .secondary-news-list .news-text-content .date, .insta-button, .advantage .item .link, .banner-right .news-deal, .banner-right .footer-form .input, .hotLine .title, .hotLine .link, .footer-menu, .city-adress, .e-mail, .Carreblanc, .Brander {
+.notification span, .notification .link, .main-nav .link, .link-upper, .backDrop .backdrop-list .link, .backDrop .backdrop-list .backdrop-title, .backDrop .backdrop-banner .backdrop-img-inner .link, .hero-sell h1, .hero-sell span, .best-deal-list .item .deal-description, .article, .size-list .size-item, .direction-list .link, .about-us-inner h1, .inner h1, .personal-offer_content span, .news-date, .secondary-news-list .news-text-content .date, .insta-button, .advantage .item .link, .banner-right .news-deal, .banner-right .footer-form .input, .hotLine .title, .hotLine .link, .footer-menu, .city-adress, .e-mail, .Carreblanc, .Brander {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -152,11 +153,9 @@ img {
 }
 
 .main-nav .link {
-  font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.01em;
-  text-transform: uppercase;
   color: #28292f;
 }
 
@@ -216,14 +215,20 @@ img {
   border: 0px solid;
 }
 
+.link-upper {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  color: #28292f;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
 .user-navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.user-navigation-list .link {
-  position: relative;
 }
 
 .user-navigation-list .link .user-nav-icon {
@@ -238,6 +243,7 @@ img {
 
 .market-navigate {
   margin-top: 25px;
+  position: relative;
 }
 
 .market-navigate-list {
@@ -277,21 +283,22 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 5.6%;
-  left: 14.35%;
+  top: 0;
+  left: 2.8%;
   opacity: 0;
   z-index: -2;
   padding: 40px 40px 40px 60px;
+  margin-left: 40px;
+  margin-right: 40px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 1442px;
   height: 495px;
   background-color: white;
   margin: 0;
   border: inherit;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(505px);
+          transform: translateY(505px);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -366,8 +373,8 @@ img {
 .market-navigate-list .item:hover .backDrop,
 .market-navigate-list .item:focus .backDrop {
   opacity: 1;
-  -webkit-transform: translateY(185px);
-          transform: translateY(185px);
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
   cursor: pointer;
   z-index: 2;
   -webkit-transition-delay: 300ms;
@@ -522,7 +529,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 50%;
+  height: auto;
   background-color: white;
   margin: 0;
   border: inherit;
@@ -594,6 +601,59 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.checkbox .item {
+  width: 25px;
+  height: 25px;
+}
+
+.checkbox .item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.size-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+.size-list .size-item {
+  margin-right: 2px;
+  margin-bottom: 3px;
+  width: 68px;
+  height: 29px;
+  padding-top: 7px;
+  border: 1px solid #a9a9a9;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #28292f;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.size-list .size-item:hover,
+.size-list .size-item :focus {
+  border: 1px solid #28292f;
+  cursor: pointer;
 }
 
 .about-us {
