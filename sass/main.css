@@ -9,6 +9,19 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid skyblue;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .container {
+    max-width: 1440px;
+  }
 }
 
 .section {
@@ -27,24 +40,24 @@ img {
   color: #ff6869;
 }
 
-.nav-list, .help-list, .user-navigation-list, .market-navigate-list, .backDrop .backdrop-list .item, .backDrop .backdrop-banner, .idea-list, .best-deal-list, .size-list .size-item, .direction-list .item, .secondary-news-list, .insta-deal-list, .advantage-list, .soc-link, .pay-systems {
+.nav-list, .help-list, .user-navigation-list, .market-navigate-list, .backdrop-banner, .backdrop-item, .idea-list, .best-deal-list, .size-list .size-item, .direction-list .item, .secondary-news-list, .insta-deal-list, .advantage-list, .soc-link, .pay-systems {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-.notification .link, .main-nav .link, .nav-list .link, .user-menu .link, .link-upper, .market-navigate-list .link, .backDrop .backdrop-list .link, .idea-list .link, .direction-list .link, .insta-deal-title .link, .insta-deal-description .link, .advantage .item .link, .banner-left .link, .banner-right .news-deal .link, .hotLine .link, .footer-menu .link, .e-mail, .Brander .link {
+.notification .link, .main-nav .link, .nav-list .link, .user-menu .link, .link-upper, .market-navigate-list .link, .backdrop-list .link, .idea-list .link, .direction-list .link, .insta-deal-title .link, .insta-deal-description .link, .advantage .item .link, .banner-left .link, .banner-right .news-deal .link, .hotLine .link, .footer-menu .link, .e-mail, .Brander .link {
   text-decoration: none;
 }
 
-.notification .link:hover, .main-nav .link:hover, .nav-list .link:hover, .user-menu .link:hover, .link-upper:hover, .market-navigate-list .link:hover, .backDrop .backdrop-list .link:hover, .idea-list .link:hover, .direction-list .link:hover, .insta-deal-title .link:hover, .insta-deal-description .link:hover, .advantage .item .link:hover, .banner-left .link:hover, .banner-right .news-deal .link:hover, .hotLine .link:hover, .footer-menu .link:hover, .e-mail:hover, .Brander .link:hover,
+.notification .link:hover, .main-nav .link:hover, .nav-list .link:hover, .user-menu .link:hover, .link-upper:hover, .market-navigate-list .link:hover, .backdrop-list .link:hover, .idea-list .link:hover, .direction-list .link:hover, .insta-deal-title .link:hover, .insta-deal-description .link:hover, .advantage .item .link:hover, .banner-left .link:hover, .banner-right .news-deal .link:hover, .hotLine .link:hover, .footer-menu .link:hover, .e-mail:hover, .Brander .link:hover,
 .notification .link :focus,
 .main-nav .link :focus,
 .nav-list .link :focus,
 .user-menu .link :focus,
 .link-upper :focus,
 .market-navigate-list .link :focus,
-.backDrop .backdrop-list .link :focus,
+.backdrop-list .link :focus,
 .idea-list .link :focus,
 .direction-list .link :focus,
 .insta-deal-title .link :focus,
@@ -80,13 +93,13 @@ img {
   background-size: cover;
 }
 
-.notification span, .notification .link, .main-nav .link, .link-upper, .backDrop .backdrop-list .link, .backDrop .backdrop-list .backdrop-title, .backDrop .backdrop-banner .backdrop-img-inner .link, .hero-sell h1, .hero-sell span, .best-deal-list .item .deal-description, .article, .size-list .size-item, .direction-list .link, .about-us-inner h1, .inner h1, .personal-offer_content span, .news-date, .secondary-news-list .news-text-content .date, .insta-button, .advantage .item .link, .banner-right .news-deal, .banner-right .footer-form .input, .hotLine .title, .hotLine .link, .footer-menu, .city-adress, .e-mail, .Carreblanc, .Brander {
+.notification span, .notification .link, .main-nav .link, .link-upper, .backdrop-list .link, .backdrop-list .backdrop-title, .backdrop-banner .backdrop-img-inner .link, .hero-sell h1, .hero-sell span, .best-deal-list .item .deal-description, .article, .size-list .size-item, .direction-list .link, .about-us-inner h1, .inner h1, .personal-offer_content span, .news-date, .secondary-news-list .news-text-content .date, .insta-button, .advantage .item .link, .banner-right .news-deal, .banner-right .footer-form .input, .hotLine .title, .hotLine .link, .footer-menu, .city-adress, .e-mail, .Carreblanc, .Brander {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
 }
 
-.market-navigate-list, .backDrop .backdrop-banner .backdrop-img-inner .title, .hero-sell h2, .idea-list .link, .best-deal-list .item .price, .best-deal-list .item .old-price, .about-us-description h1, .about-us-inner h2, .inner h2, .personal-offer_content h1, .blog-title h1, .news-description, .secondary-news-list .news-text-content, .advantage .item .title, .banner-left .title, .banner-right .title {
+.market-navigate-list, .backdrop-banner .backdrop-img-inner .title, .hero-sell h2, .idea-list .link, .best-deal-list .item .price, .best-deal-list .item .old-price, .about-us-description h1, .about-us-inner h2, .inner h2, .personal-offer_content h1, .blog-title h1, .news-description, .secondary-news-list .news-text-content, .advantage .item .title, .banner-left .title, .banner-right .title {
   font-family: Prata;
   font-style: normal;
   font-weight: normal;
@@ -102,7 +115,7 @@ img {
 
 .notification {
   background-color: #ff6869;
-  width: auto;
+  width: 100%;
   height: 40px;
   text-align: center;
   color: #ffffff;
@@ -117,7 +130,7 @@ img {
   margin: 0;
 }
 
-.notification span:not(:last-child) {
+.notification span:not(:first-child) {
   margin-right: 15px;
 }
 
@@ -132,6 +145,23 @@ img {
   letter-spacing: 0.01em;
   margin: 0;
   color: #ffffff;
+  display: none;
+}
+
+@media screen and (min-width: 1439px) {
+  .notification .link {
+    display: inline;
+  }
+}
+
+.notification .non-display-mv {
+  display: none;
+}
+
+@media screen and (min-width: 1439px) {
+  .notification .non-display-mv {
+    display: inline;
+  }
 }
 
 .notification .link:hover,
@@ -231,10 +261,21 @@ img {
   display: flex;
 }
 
-.user-navigation-list .link .user-nav-icon {
-  position: absolute;
-  top: -35px;
-  left: 30%;
+.user-navigation-list .link {
+  margin-top: 5px;
+}
+
+.user-navigation-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .user-navigation-list .item:not(:last-child) {
@@ -243,7 +284,9 @@ img {
 
 .market-navigate {
   margin-top: 25px;
-  position: relative;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .market-navigate-list {
@@ -253,6 +296,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   margin-top: 15px;
   padding-left: 40px;
   padding-right: 40px;
@@ -282,18 +326,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 2.8%;
-  opacity: 0;
-  z-index: -2;
-  padding: 40px 40px 40px 60px;
-  margin-left: 40px;
-  margin-right: 40px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -2;
+  width: 100%;
   height: 495px;
+  padding: 40px 40px 40px 60px;
   background-color: white;
   margin: 0;
   border: inherit;
@@ -303,71 +346,6 @@ img {
   transition: -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backDrop .backdrop-list {
-  padding: 0;
-}
-
-.backDrop .backdrop-list:not(:last-child) {
-  margin-right: 83px;
-}
-
-.backDrop .backdrop-list .item {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-.backDrop .backdrop-list .link {
-  text-align: left;
-  font-size: 12px;
-  line-height: 18px;
-  color: #28292f;
-  letter-spacing: 0.01em;
-  margin-bottom: 10px;
-}
-
-.backDrop .backdrop-list .backdrop-title {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.backDrop .backdrop-banner .backdrop-img {
-  max-width: 300px;
-  height: auto;
-  position: relative;
-}
-
-.backDrop .backdrop-banner .backdrop-img-inner {
-  display: block;
-  text-align: center;
-  width: 260px;
-  height: 90px;
-  position: absolute;
-  background-color: #fff;
-  bottom: 20%;
-  right: 4.5%;
-}
-
-.backDrop .backdrop-banner .backdrop-img-inner .title {
-  font-size: 20px;
-  line-height: 26px;
-  margin: 20px 0 5px 0;
-  text-align: center;
-}
-
-.backDrop .backdrop-banner .backdrop-img-inner .link {
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
 }
 
 .market-navigate-list .item:hover .backDrop,
@@ -381,31 +359,125 @@ img {
           transition-delay: 300ms;
 }
 
+.backdrop-list {
+  padding: 0;
+}
+
+.backdrop-list:not(:last-child) {
+  margin-right: 83px;
+}
+
+.backdrop-list .link {
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  color: #28292f;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+
+.backdrop-list .backdrop-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.backdrop-banner .backdrop-img {
+  max-width: 300px;
+  height: auto;
+  position: relative;
+}
+
+.backdrop-banner .backdrop-img-inner {
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 90px;
+  position: absolute;
+  background-color: #fff;
+  bottom: 20%;
+  right: 0;
+  -webkit-transform: translate(-54%);
+          transform: translate(-54%);
+}
+
+.backdrop-banner .backdrop-img-inner .title {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 20px 0 5px 0;
+  text-align: center;
+}
+
+.backdrop-banner .backdrop-img-inner .link {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.backdrop-item {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
 .hero {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1439px) {
+  .hero {
+    margin-bottom: 50px;
+  }
 }
 
 .hero-bg {
-  max-width: 1360px;
-  height: 470px;
+  max-width: 376px;
+  height: 420px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/main_banner.jpg);
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1439px) {
+  .hero-bg {
+    max-width: 1360px;
+    height: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+  }
 }
 
 .hero-sell {
-  width: 385px;
-  height: 290px;
+  width: 335px;
+  height: 229px;
   background-color: #fff;
   position: absolute;
-  left: 60px;
-  top: 95px;
-  padding: 40px;
+  left: 20px;
+  bottom: 20px;
+  padding: 30px;
   color: #28292f;
   font-style: normal;
   font-weight: normal;
+  text-align: center;
+}
+
+@media screen and (min-width: 1439px) {
+  .hero-sell {
+    width: 385px;
+    height: 290px;
+    padding: 40px;
+    left: 60px;
+    top: 95px;
+  }
 }
 
 .hero-sell h1 {
@@ -413,14 +485,26 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1439px) {
+  .hero-sell h1 {
+    margin-bottom: 10px;
+  }
 }
 
 .hero-sell h2 {
   font-size: 32px;
   line-height: 38px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1439px) {
+  .hero-sell h2 {
+    margin-bottom: 25px;
+  }
 }
 
 .hero-sell span {
@@ -429,6 +513,10 @@ img {
   text-align: center;
   letter-spacing: 0.01em;
   margin: 0;
+}
+
+.hero-sell .button {
+  margin-top: 10px;
 }
 
 .idea-list {
@@ -446,6 +534,16 @@ img {
       flex-wrap: nowrap;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.idea-list .non-display-mv {
+  display: none;
+}
+
+@media screen and (min-width: 1439px) {
+  .idea-list .non-display-mv {
+    display: inline;
+  }
 }
 
 .idea-list .item:not(:last-child) {
@@ -466,7 +564,13 @@ img {
 }
 
 .best-deal {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1439px) {
+  .best-deal {
+    margin-bottom: 100px;
+  }
 }
 
 .best-deal-list {
@@ -478,15 +582,43 @@ img {
           justify-content: center;
 }
 
+@media screen and (max-width: 1439px) {
+  .best-deal-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+}
+
 .best-deal-list .item {
-  width: 240px;
-  padding-bottom: 31px;
-  position: relative;
+  width: 172px;
+  padding: 0;
+}
+
+.best-deal-list .item:nth-child(-n + 3) {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1439px) {
+  .best-deal-list .item {
+    width: 240px;
+    padding-bottom: 31px;
+    position: relative;
+  }
+  .best-deal-list .item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .best-deal-list .item img {
   margin-bottom: 15px;
-  width: 240px;
+  width: 172px;
+}
+
+@media screen and (min-width: 1439px) {
+  .best-deal-list .item img {
+    width: 240px;
+  }
 }
 
 .best-deal-list .item span {
@@ -519,6 +651,39 @@ img {
   color: #a9a9a9;
 }
 
+@media screen and (max-width: 1000px) {
+  .best-deal-list .item .old-price {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .best-deal-list .item .price_btn-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: auto;
+  }
+}
+
+.best-deal-list .item .price_btn-mobile .mobile-round-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .best-deal-list .item .price_btn-mobile .mobile-round-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ff6869;
+    color: white;
+    border: 1px solid #ff6869;
+  }
+}
+
 .best-deal-list .item .check-button {
   position: absolute;
   top: 62.5%;
@@ -530,7 +695,7 @@ img {
           align-items: center;
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: #ee7777;
   margin: 0;
   border: inherit;
   -webkit-transform: translateY(150px);
@@ -547,10 +712,6 @@ img {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   z-index: 3;
-}
-
-.best-deal-list .item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .article {
@@ -654,6 +815,12 @@ img {
 .size-list .size-item :focus {
   border: 1px solid #28292f;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .non-display {
+    display: none;
+  }
 }
 
 .about-us {

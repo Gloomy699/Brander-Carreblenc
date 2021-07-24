@@ -9,7 +9,7 @@
 
 .notification {
   background-color: #ff6869;
-  width: auto;
+  width: 100%;
   height: 40px;
   text-align: center;
   color: #ffffff;
@@ -24,7 +24,7 @@
     letter-spacing: 0.01em;
     margin: 0;
   }
-  span:not(:last-child) {
+  span:not(:first-child) {
     margin-right: 15px;
   }
   svg {
@@ -39,6 +39,16 @@
     letter-spacing: 0.01em;
     margin: 0;
     color: #ffffff;
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: inline;
+    }
+  }
+  .non-display-mv {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: inline;
+    }
   }
   .link:hover,
   .link:focus {
@@ -131,15 +141,14 @@
 .user-navigation-list {
   display: flex;
   @extend %list;
-
   .link {
-    .user-nav-icon {
-      position: absolute;
-      top: -35px;
-      left: 30%;
-    }
+    margin-top: 5px;
   }
-
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .item:not(:last-child) {
     margin-right: 35px;
   }
@@ -147,12 +156,16 @@
 
 .market-navigate {
   margin-top: 25px;
-  position: relative;
+
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .market-navigate-list {
   display: flex;
   justify-content: center;
+  position: relative;
 
   margin-top: 15px;
 
@@ -187,20 +200,17 @@
 
 .backDrop {
   display: flex;
+  align-items: flex-start;
 
   position: absolute;
-
+  left: 0;
   top: 0;
-  left: 2.8%;
   opacity: 0; //включи
   z-index: -2; // исправь на -2
 
-  padding: 40px 40px 40px 60px;
-  margin-left: 40px;
-  margin-right: 40px;
-  align-items: flex-start;
-
+  width: 100%;
   height: 495px;
+  padding: 40px 40px 40px 60px;
 
   background-color: rgb(255, 255, 255);
 
@@ -209,76 +219,6 @@
 
   transform: translateY(1005px);
   transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .backdrop-list {
-    padding: 0;
-    &:not(:last-child) {
-      margin-right: 83px;
-    }
-    .item {
-      border: 0;
-      padding: 0;
-      margin: 0;
-      @extend %list;
-      text-align: left;
-    }
-    .link {
-      @extend %link;
-      text-align: left;
-      @extend %main-text;
-      font-size: 12px;
-      line-height: 18px;
-      color: $primary-color;
-      letter-spacing: 0.01em;
-      margin-bottom: 10px;
-    }
-
-    .backdrop-title {
-      @extend %main-text;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 0.01em;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-  }
-  .backdrop-banner {
-    @extend %list;
-    .backdrop-img {
-      max-width: 300px;
-      height: auto;
-      position: relative;
-    }
-
-    .backdrop-img-inner {
-      display: block;
-      text-align: center;
-      width: 260px;
-      height: 90px;
-      position: absolute;
-      background-color: #fff;
-      bottom: 20%;
-      right: 4.5%;
-
-      .title {
-        @extend %secondary-text;
-        font-size: 20px;
-        line-height: 26px;
-        margin: 20px 0 5px 0;
-        text-align: center;
-      }
-      .link {
-        @extend %main-text;
-        font-size: 12px;
-        line-height: 18px;
-
-        text-align: center;
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
-      }
-    }
-  }
 }
 
 // раскоментируй
@@ -289,4 +229,77 @@
   cursor: pointer;
   z-index: 2;
   transition-delay: 300ms;
+}
+
+.backdrop-list {
+  padding: 0;
+  &:not(:last-child) {
+    margin-right: 83px;
+  }
+
+  .link {
+    @extend %link;
+    text-align: left;
+    @extend %main-text;
+    font-size: 12px;
+    line-height: 18px;
+    color: $primary-color;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  .backdrop-title {
+    @extend %main-text;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+.backdrop-banner {
+  @extend %list;
+  .backdrop-img {
+    max-width: 300px;
+    height: auto;
+    position: relative;
+  }
+
+  .backdrop-img-inner {
+    display: block;
+    text-align: center;
+    width: 260px;
+    height: 90px;
+    position: absolute;
+    background-color: #fff;
+    bottom: 20%;
+    right: 0;
+    transform: translate(-54%);
+
+    .title {
+      @extend %secondary-text;
+      font-size: 20px;
+      line-height: 26px;
+      margin: 20px 0 5px 0;
+      text-align: center;
+    }
+    .link {
+      @extend %main-text;
+      font-size: 12px;
+      line-height: 18px;
+
+      text-align: center;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.backdrop-item {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  @extend %list;
+  text-align: left;
 }
