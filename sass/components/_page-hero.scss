@@ -91,14 +91,16 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  .non-display-mv {
-    display: none;
-    @media screen and (min-width: $desktop) {
-      display: inline;
+  .item {
+    @media screen and (max-width: $desktop) {
+      text-align: center;
     }
   }
   .item:not(:last-child) {
     margin-right: 20px;
+    @media screen and (max-width: $desktop) {
+      margin: 0;
+    }
   }
 
   @extend %list;
@@ -114,5 +116,16 @@
   .link:hover,
   .link:focus {
     color: black;
+  }
+}
+
+.idea-list.desktop {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+.idea-list.mobile {
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }

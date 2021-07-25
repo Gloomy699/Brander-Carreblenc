@@ -8,6 +8,11 @@
   justify-content: center;
   margin-bottom: 60px;
   padding-top: 80px;
+  @media screen and (max-width: $desktop) {
+    display: block;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .banner-left {
@@ -17,6 +22,12 @@
   @extend %bg-image;
   background-image: url(../img/footer_img_blog.jpeg);
   margin-right: 20px;
+  @media screen and (max-width: $desktop) {
+    height: 160px;
+    margin: 0;
+    padding: 34px 40px 33px 40px;
+    text-align: left;
+  }
 
   .title {
     @extend %secondary-text;
@@ -25,12 +36,23 @@
     color: #375955;
 
     margin: 72px auto 15px 85px;
+    @media screen and (max-width: $desktop) {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   .link {
     @extend %link;
     color: #375955;
     margin-left: 85px;
+    @media screen and (max-width: $desktop) {
+      margin: 0;
+      font-size: 12px;
+      line-height: 18px;
+    }
 
     .blog-arrow {
       margin-left: 5px;
@@ -52,6 +74,12 @@
   @extend %bg-image;
   background-image: url(../img/footer_img_subscr.jpeg);
   margin-right: 20px;
+  @media screen and (max-width: $desktop) {
+    height: 240px;
+    margin: 0;
+    padding: 30px;
+    text-align: left;
+  }
 
   .title {
     @extend %secondary-text;
@@ -60,6 +88,12 @@
     color: $primary-color;
 
     margin: 50px auto 10px 50px;
+    @media screen and (max-width: $desktop) {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   .news-deal {
@@ -69,7 +103,10 @@
     @extend %main-text;
     font-size: 14px;
     line-height: 20px;
-
+    @media screen and (max-width: $desktop) {
+      margin: 0;
+      margin-bottom: 15px;
+    }
     .link {
       @extend %link;
       color: $primary-color;
@@ -80,6 +117,10 @@
     justify-content: center;
     margin-left: 40px;
     margin-right: 50px;
+    @media screen and (max-width: $desktop) {
+      display: block;
+      margin: 0;
+    }
 
     .input {
       width: 100%;
@@ -100,6 +141,10 @@
       line-height: 18px;
 
       letter-spacing: 0.01em;
+      @media screen and (max-width: $desktop) {
+        border: 1px solid $accent-color;
+        margin-bottom: 5px;
+      }
     }
 
     .button {
@@ -114,6 +159,10 @@
 
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
+      @media screen and (max-width: $desktop) {
+        margin: 0;
+        width: 100%;
+      }
     }
     .button:hover,
     .button:focus {
@@ -128,12 +177,20 @@
   display: flex;
   justify-content: center;
   margin-bottom: 120px;
+  @media screen and (max-width: $desktop) {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .hotLine {
   display: block;
   border-right: 1px solid#ac9e9e;
   padding-right: 50px;
+  @media screen and (max-width: $desktop) {
+    padding: 0;
+  }
 
   .title {
     @extend %main-text;
@@ -156,6 +213,9 @@
     line-height: 32px;
     color: #a9a9a9;
     margin-bottom: 54px;
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 20px;
+    }
   }
   .timeTable {
     text-align: left;
@@ -170,6 +230,11 @@
     td {
       font-weight: normal;
     }
+    @media screen and (max-width: $desktop) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 61px;
+    }
   }
 }
 
@@ -182,6 +247,11 @@
   line-height: 18px;
 
   letter-spacing: 0.01em;
+  @media screen and (max-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 61px;
+  }
 
   td {
     width: 132px;
@@ -206,16 +276,18 @@
 .adress {
   margin-left: 80px;
   max-width: 200px;
+  @media screen and (max-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .city-adress {
   @extend %main-text;
   font-size: 12px;
   line-height: 18px;
-
   letter-spacing: 0.01em;
   color: #a9a9a9;
-
   margin-bottom: 20px;
 }
 .e-mail {
@@ -226,6 +298,9 @@
   @extend %link;
   color: #a9a9a9;
   margin-bottom: 100px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 .e-mail:hover,
 .e-mail:focus {
@@ -234,6 +309,12 @@
 .soc-link {
   display: flex;
   @extend %list;
+  @media screen and (max-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 51px;
+    justify-content: space-between;
+  }
 
   .item:not(:last-child) {
     margin-right: 40px;
@@ -252,6 +333,13 @@
   text-align: right;
   @extend %list;
   margin-left: 200px;
+  @media screen and (max-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 41px;
+    justify-content: space-around;
+  }
   .item {
     text-align: right;
   }
@@ -271,6 +359,10 @@
 .footer-developers {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: $desktop) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .Carreblanc {

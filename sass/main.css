@@ -536,18 +536,20 @@ img {
   padding-right: 20px;
 }
 
-.idea-list .non-display-mv {
-  display: none;
-}
-
-@media screen and (min-width: 1439px) {
-  .idea-list .non-display-mv {
-    display: inline;
+@media screen and (max-width: 1439px) {
+  .idea-list .item {
+    text-align: center;
   }
 }
 
 .idea-list .item:not(:last-child) {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1439px) {
+  .idea-list .item:not(:last-child) {
+    margin: 0;
+  }
 }
 
 .idea-list .link {
@@ -561,6 +563,18 @@ img {
 .idea-list .link:hover,
 .idea-list .link:focus {
   color: black;
+}
+
+@media screen and (max-width: 1439px) {
+  .idea-list.desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .idea-list.mobile {
+    display: none;
+  }
 }
 
 .best-deal {
@@ -1667,10 +1681,23 @@ img {
           justify-content: center;
 }
 
+@media screen and (max-width: 1439px) {
+  .advantage-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .advantage .item {
   display: block;
   width: 220px;
   text-align: center;
+}
+
+@media screen and (max-width: 1439px) {
+  .advantage .item:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 .advantage .item .advantage-icon {
@@ -1716,12 +1743,29 @@ img {
   padding-top: 80px;
 }
 
+@media screen and (max-width: 1439px) {
+  .footer-banner {
+    display: block;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .banner-left {
   width: 100%;
   max-width: 542px;
   height: 245px;
   background-image: url(../img/footer_img_blog.jpeg);
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1439px) {
+  .banner-left {
+    height: 160px;
+    margin: 0;
+    padding: 34px 40px 33px 40px;
+    text-align: left;
+  }
 }
 
 .banner-left .title {
@@ -1731,9 +1775,26 @@ img {
   margin: 72px auto 15px 85px;
 }
 
+@media screen and (max-width: 1439px) {
+  .banner-left .title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 .banner-left .link {
   color: #375955;
   margin-left: 85px;
+}
+
+@media screen and (max-width: 1439px) {
+  .banner-left .link {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .banner-left .link .blog-arrow {
@@ -1756,6 +1817,15 @@ img {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 1439px) {
+  .banner-right {
+    height: 240px;
+    margin: 0;
+    padding: 30px;
+    text-align: left;
+  }
+}
+
 .banner-right .title {
   font-size: 24px;
   line-height: 30px;
@@ -1763,11 +1833,27 @@ img {
   margin: 50px auto 10px 50px;
 }
 
+@media screen and (max-width: 1439px) {
+  .banner-right .title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 .banner-right .news-deal {
   display: block;
   margin: 0 43px 25px 50px;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media screen and (max-width: 1439px) {
+  .banner-right .news-deal {
+    margin: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .banner-right .news-deal .link {
@@ -1783,6 +1869,13 @@ img {
           justify-content: center;
   margin-left: 40px;
   margin-right: 50px;
+}
+
+@media screen and (max-width: 1439px) {
+  .banner-right .footer-form {
+    display: block;
+    margin: 0;
+  }
 }
 
 .banner-right .footer-form .input {
@@ -1802,6 +1895,13 @@ img {
   letter-spacing: 0.01em;
 }
 
+@media screen and (max-width: 1439px) {
+  .banner-right .footer-form .input {
+    border: 1px solid #ff6869;
+    margin-bottom: 5px;
+  }
+}
+
 .banner-right .footer-form .button {
   margin: 0;
   margin-left: -1px;
@@ -1812,6 +1912,13 @@ img {
   border: 1px solid #ff6869;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+@media screen and (max-width: 1439px) {
+  .banner-right .footer-form .button {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .banner-right .footer-form .button:hover,
@@ -1831,10 +1938,24 @@ img {
   margin-bottom: 120px;
 }
 
+@media screen and (max-width: 1439px) {
+  .footer-contact {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+}
+
 .hotLine {
   display: block;
   border-right: 1px solid #ac9e9e;
   padding-right: 50px;
+}
+
+@media screen and (max-width: 1439px) {
+  .hotLine {
+    padding: 0;
+  }
 }
 
 .hotLine .title {
@@ -1854,6 +1975,12 @@ img {
   margin-bottom: 54px;
 }
 
+@media screen and (max-width: 1439px) {
+  .hotLine .link {
+    margin-bottom: 20px;
+  }
+}
+
 .hotLine .timeTable {
   text-align: left;
   font-family: Open Sans;
@@ -1868,12 +1995,28 @@ img {
   font-weight: normal;
 }
 
+@media screen and (max-width: 1439px) {
+  .hotLine .timeTable {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 61px;
+  }
+}
+
 .footer-menu {
   margin-left: 50px;
   text-align: left;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.01em;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer-menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 61px;
+  }
 }
 
 .footer-menu td {
@@ -1901,6 +2044,13 @@ img {
   max-width: 200px;
 }
 
+@media screen and (max-width: 1439px) {
+  .adress {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .city-adress {
   font-size: 12px;
   line-height: 18px;
@@ -1917,6 +2067,12 @@ img {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1439px) {
+  .e-mail {
+    margin-bottom: 30px;
+  }
+}
+
 .e-mail:hover,
 .e-mail:focus {
   color: #ff6869;
@@ -1926,6 +2082,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 1439px) {
+  .soc-link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 51px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .soc-link .item:not(:last-child) {
@@ -1944,6 +2111,19 @@ img {
 .pay-systems {
   text-align: right;
   margin-left: 200px;
+}
+
+@media screen and (max-width: 1439px) {
+  .pay-systems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 41px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .pay-systems .item {
@@ -1971,6 +2151,13 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer-developers {
+    display: block;
+    text-align: center;
+  }
 }
 
 .Carreblanc {

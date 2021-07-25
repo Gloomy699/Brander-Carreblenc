@@ -5,12 +5,20 @@
   display: flex;
   @extend %list;
   justify-content: center;
+  @media screen and (max-width: $desktop) {
+    flex-wrap: wrap;
+  }
 }
 
 .advantage .item {
   display: block;
   width: 220px;
   text-align: center;
+  @media screen and (max-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
 
   .advantage-icon {
     stroke: rgb(0, 0, 0);
