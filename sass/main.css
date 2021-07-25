@@ -706,6 +706,13 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 1000px) {
+  .best-deal-list .item .check-button {
+    top: 25%;
+    left: 0%;
+  }
+}
+
 .best-deal-list .item:hover .check-button,
 .best-deal-list .item:focus .check-button {
   opacity: 1;
@@ -727,6 +734,29 @@ img {
   margin-left: 93px;
   fill: black;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1439px) {
+  .item .check-button .article-desktop {
+    display: none;
+  }
+}
+
+.item .check-button .article-mobile {
+  text-align: left;
+  color: #28292f;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #efeded;
+}
+
+.item .check-button .article-mobile .article-svg {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1439px) {
+  .item .check-button .article-mobile {
+    display: none;
+  }
 }
 
 .order {
@@ -762,6 +792,27 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1439px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.buttons .faforit-btn {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1439px) {
+  .buttons .faforit-btn {
+    display: none;
+  }
 }
 
 .checkbox {

@@ -113,6 +113,8 @@
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       @media screen and (max-width: 1000px) {
+        top: 25%;
+        left: 0%;
       }
     }
 
@@ -137,6 +139,25 @@
     margin-left: 93px;
     fill: black;
     vertical-align: middle;
+  }
+}
+
+.item .check-button .article-desktop {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.item .check-button .article-mobile {
+  text-align: left;
+  color: $primary-color;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #efeded;
+  .article-svg {
+    margin-left: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }
 
@@ -168,6 +189,20 @@
   margin-right: auto;
   margin-top: 10px;
 }
+.buttons {
+  @media screen and (max-width: $desktop) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .faforit-btn {
+    margin-top: 10px;
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+}
+
 .checkbox {
   display: flex;
   justify-content: center;
