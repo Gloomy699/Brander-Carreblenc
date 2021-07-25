@@ -2,6 +2,11 @@
   max-width: 1124px;
   height: 630px;
   margin-bottom: 130px;
+  @media screen and (max-width: $desktop) {
+    max-width: 355px;
+    height: 940px;
+    margin-bottom: 80px;
+  }
 }
 
 .blog-title {
@@ -14,6 +19,10 @@
     @extend %secondary-text;
     font-size: 32px;
     line-height: 38px;
+    @media screen and (max-width: $desktop) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
   .border {
     display: block;
@@ -26,6 +35,9 @@
 
 .blog-news {
   display: flex;
+  @media screen and (max-width: $desktop) {
+    display: block;
+  }
 }
 
 .main-news {
@@ -34,10 +46,20 @@
   background-color: #f2efec;
   display: block;
   margin-right: 15px;
+  @media screen and (max-width: $desktop) {
+    width: 355px;
+    height: 394px;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
 }
 .main-news-content {
   height: 170px;
   padding: 30px 31px 40px 35px;
+  @media screen and (max-width: $desktop) {
+    padding: 30px;
+    height: 178px;
+  }
 }
 
 .news-date {
@@ -53,12 +75,20 @@
   @extend %secondary-text;
   font-size: 32px;
   line-height: 38px;
+  @media screen and (max-width: $desktop) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .blog-secondary-news {
   width: 567px;
   height: 500px;
   display: block;
+  @media screen and (max-width: $desktop) {
+    width: 355px;
+    height: 325px;
+  }
 
   button {
     display: block;
@@ -66,6 +96,10 @@
     width: 537px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: $desktop) {
+      margin-top: 40px;
+      width: 355px;
+    }
   }
 }
 
@@ -76,6 +110,14 @@
     display: flex;
     width: 567px;
     padding: 15px;
+    @media screen and (max-width: $desktop) {
+      width: 355px;
+      height: 95px;
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
   .item:hover,
   .item:focus {
@@ -93,6 +135,10 @@
     @extend %secondary-text;
     font-size: 20px;
     line-height: 26px;
+    @media screen and (max-width: $desktop) {
+      font-size: 14px;
+      line-height: 20px;
+    }
 
     .date {
       margin-bottom: 10px;

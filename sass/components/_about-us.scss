@@ -13,31 +13,49 @@
   .button {
     @extend %button;
   }
+  @media screen and (max-width: $desktop) {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 1680px;
+  }
 }
 
 .about-us-upper {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+  @media screen and (max-width: $desktop) {
+    display: block;
+  }
 }
 
 .about-us-description {
   max-width: 437px;
   height: auto;
   margin-right: 262px;
-
+  @media screen and (max-width: $desktop) {
+    margin-right: 0;
+  }
   h1 {
     @extend %secondary-text;
     font-size: 32px;
     line-height: 38px;
     color: #28292f;
     margin: 0;
+    @media screen and (max-width: $desktop) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
   }
   .border {
     display: block;
     margin-bottom: 83px;
     width: 80px;
     border-top: 1px solid black;
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -95,6 +113,10 @@
 
   position: relative;
   margin-bottom: 20px;
+  @media screen and (max-width: $desktop) {
+    min-width: 355px;
+    height: 420px;
+  }
 }
 
 .about-us-inner {
@@ -111,6 +133,14 @@
 
   text-align: center;
   align-items: center;
+  @media screen and (max-width: $desktop) {
+    width: 315px;
+    height: 201px;
+    padding: 30px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
 
   h1 {
     @extend %main-text;
@@ -136,12 +166,20 @@
 .about-us-down {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: $desktop) {
+    display: block;
+  }
 }
 
 .about-us-down .left,
 .right {
-  width: 542px;
+  min-width: 542px;
   height: 520px;
+
+  @media screen and (max-width: $desktop) {
+    min-width: 355px;
+    height: 420px;
+  }
 }
 
 .about-us-down .left {
@@ -150,12 +188,22 @@
   background-image: url(../img/categories_2.jpg);
   @extend %bg-image;
   position: relative;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .about-us-down .right {
   background-image: url(../img/categories_3.jpeg);
   @extend %bg-image;
   position: relative;
+  @media screen and (max-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .inner {
@@ -188,5 +236,14 @@
     line-height: 30px;
     letter-spacing: 0.01em;
     margin: 0;
+  }
+
+  @media screen and (max-width: $desktop) {
+    width: 315px;
+    height: 201px;
+    padding: 30px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
   }
 }

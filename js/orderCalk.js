@@ -7,3 +7,5 @@ if (tmp>max) tmp=max;
     obj.value = tmp;
     
 }
+
+

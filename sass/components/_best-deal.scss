@@ -27,6 +27,7 @@
       position: relative;
       &:not(:last-child) {
         margin-right: 40px;
+        margin-bottom: 0;
       }
     }
 
@@ -54,6 +55,11 @@
       line-height: 20px;
       margin-bottom: 15px;
       color: $primary-color;
+    }
+    .check-description {
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
     }
     .price {
       @extend %secondary-text;
@@ -95,7 +101,7 @@
     }
     .check-button {
       position: absolute;
-      top: 62.5%;
+      top: 59%;
       z-index: -3;
       opacity: 0;
 
@@ -104,7 +110,7 @@
       width: 100%;
       height: auto;
 
-      background-color: rgb(238, 119, 119);
+      background-color: rgb(255, 255, 255);
 
       margin: 0;
       border: inherit;
@@ -203,19 +209,32 @@
   }
 }
 
+.checkbox-and-size-mv {
+  @media screen and (max-width: 1000px) {
+    display: flex;
+  }
+}
 .checkbox {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 
-  .item {
+  .color-item {
     width: 25px;
     height: 25px;
     &:not(:last-child) {
       margin-right: 5px;
     }
+    @media screen and (max-width: 1000px) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    margin-right: 50px;
   }
 }
+
 .size-list {
   display: flex;
   justify-content: start;
@@ -245,9 +264,37 @@
       border: 1px solid $primary-color;
       cursor: pointer;
     }
+    @media screen and (max-width: 1000px) {
+      padding-top: 12px;
+      width: 96px;
+      height: 44px;
+    }
   }
 }
+.checkbox-and-size-title {
+  display: none;
+  @media screen and (max-width: 1000px) {
+    display: flex;
 
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    .color-title {
+      margin-right: 108px;
+    }
+  }
+}
+.checkbox-and-size-mv {
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .non-display {
   @media screen and (max-width: 1000px) {
     display: none;

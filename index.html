@@ -920,9 +920,9 @@
               <div>
                 <div class="order">
                   <form class="order-calc">
-                    <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
+                    <input class="btn-form" type="button" value="-" onClick="change('amount',0,50,-1);" />
                     <input class="btn-form" id="amount" type="text" value="1" />
-                    <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
+                    <input class="btn-form" type="button" value="+" onClick="change('amount',0,50, 1);" />
                 
                   </form>
                 
@@ -940,7 +940,7 @@
                 </div> 
               </li>
 
-                <li class="item">
+             <li class="item">
                   <img class="deal-img" src="./img/item_3.jpg" alt="Копмлект постельного белья из хлопка и льна">
                   <span class="article article-mobile">Артикул: 214324</span>
                   <span class="deal-description">Розовый копмлект постельного белья из хлопка и льна</span>
@@ -958,21 +958,19 @@
                     <span class="article article-desktop">Артикул: 214324 <svg class="article-svg" width="16" height="16">
                         <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
                       </svg></span>
-                    <span class="deal-description">Копмлект постельного белья из хлопка и льна</span>
+                    <span class="deal-description check-description">Копмлект постельного белья из хлопка и льна</span>
                     <div>
                       <div class="order">
                         <form class="order-calc">
-                          <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                          <input class="btn-form" id="amount" type="text" value="1" />
-                          <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
+                          <input class="btn-form" type="button" value="-" onClick="change('amount-1',0,50,-1);" />
+                          <input class="btn-form" id="amount-1" type="text" value="1" />
+                          <input class="btn-form" type="button" value="+" onClick="change('amount-1',0,50, 1);" />
                 
                         </form>
                 
                         <div class="price">
                           <span class="price">640 ₴</span>
-                          <span class="old-price"></span>
-                
-                
+                          <span class="old-price"></span>                    
                         </div>
                       </div>
                       <div class="buttons">
@@ -982,8 +980,9 @@
                    
                     </div>
                 
+
                   </div>
-                </li>
+              </li>
         
               <li class="item">
                 <img class="deal-img" src="./img/item_2.jpg" alt="Мужской однотонный халат с капюшоном из хлопка">
@@ -1000,32 +999,44 @@
                 
               <div class="check-button">
               
+                
                 <span class="article article-mobile"><svg class="article-svg" width="16" height="16">
                     <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
                   </svg> Хлопок — 9%, Вискоза — 91%; 80 нитей/см²</span>
-                <span class="article">Артикул: 214324 <svg class="article-svg" width="16" height="16">
+                <span class="article article-desktop">Артикул: 214324 <svg class="article-svg" width="16" height="16">
                     <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
                   </svg></span>
-                  <div class="checkbox">
-                  <input class="item item-blue" type="checkbox"/>
-                  <input class="item item-rose" type="checkbox"/>
-                  <input class="item item-white" type="checkbox"/>
-                   </div>
 
+                  <div class="checkbox-and-size-title">
+<h3 class="color-title">Цвет</h3>
+                    <h3 class="size-title">Размер</h3>
+                    
+                  </div>
+
+                <div class="checkbox-and-size-mv">
+                  <div class="checkbox">
+                    <input class="color-item item-blue" type="checkbox" />
+                    <input class="color-item item-rose" type="checkbox" />
+                    <input class="color-item item-white non-display" type="checkbox" />
+                  </div>
+                
                   <ul class="size-list">
+                
                     <li class="size-item">140 x 200</li>
                     <li class="size-item">200 x 200</li>
                     <li class="size-item">240 x 220</li>
                     <li class="size-item">260 x 240</li>
                   </ul>
-                <span class="deal-description">Мужской однотонный халат с капюшоном из хлопка</span>
+                </div>
+
+                <span class="deal-description check-description">Мужской однотонный халат с капюшоном из хлопка</span>
                 <div>
-                  
+
                   <div class="order">
                     <form class="order-calc">
-                      <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                      <input class="btn-form" id="amount" type="text" value="1" />
-                      <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
+                      <input class="btn-form" type="button" value="-" onClick="change('amount-2',0,10,-1);" />
+                      <input class="btn-form" id="amount-2" type="text" value="1" />
+                      <input class="btn-form" type="button" value="+" onClick="change('amount-2',0,10, 1);" />
               
                     </form>
               
@@ -1037,13 +1048,14 @@
                     </div>
                   </div>
               
-                  <button class="order button">в корзину</button>
+                  <div class="buttons">
+                    <button class="faforit-btn button">в корзину</button>
+                    <button class="order button">в корзину</button>
+                  </div>
                 </div>
               
               </div>
-              </li>
-        
-           
+              </li>                 
         
               <li class="item">
                 <img class="deal-img" src="./img/item_4.jpg" alt="Махровый однотонный плед из длинной чистой шерсти">
@@ -1056,36 +1068,38 @@
                   </div>
                   <button class="mobile-round-btn">+</button>
                 </div>
-                <div class="check-button">
-                
-                  <span class="article article-mobile"><svg class="article-svg" width="16" height="16">
-                      <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-                    </svg> Хлопок — 9%, Вискоза — 91%; 80 нитей/см²</span>
-                  <span class="article">Артикул: 214324 <svg class="article-svg" width="16" height="16">
-                      <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-                    </svg></span>
-                  <span class="deal-description">Махровый однотонный плед из длинной чистой шерсти</span>
-                  <div>
-                    <div class="order">
-                      <form class="order-calc">
-                        <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                        <input class="btn-form" id="amount" type="text" value="1" />
-                        <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
-                
-                      </form>
-                
-                      <div class="price">
-                        <span class="price">640 ₴</span>
-                        <span class="old-price"></span>
-                
-                
+                  <div class="check-button">
+                    <span class="article article-mobile"><svg class="article-svg" width="16" height="16">
+                        <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
+                      </svg> Хлопок — 9%, Вискоза — 91%; 80 нитей/см²</span>
+                    <span class="article article-desktop">Артикул: 214324 <svg class="article-svg" width="16" height="16">
+                        <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
+                      </svg></span>
+                    <span class="deal-description check-description">Копмлект постельного белья из хлопка и льна</span>
+                    <div>
+                      <div class="order">
+                        <form class="order-calc">
+                          <input class="btn-form" type="button" value="-" onClick="change('amount-3',0,50,-1);" />
+                          <input class="btn-form" id="amount-3" type="text" value="1" />
+                          <input class="btn-form" type="button" value="+" onClick="change('amount-3',0,50, 1);" />
+                  
+                        </form>
+                  
+                        <div class="price">
+                          <span class="price">640 ₴</span>
+                          <span class="old-price"></span>
+                  
+                  
+                        </div>
                       </div>
+                      <div class="buttons">
+                        <button class="faforit-btn button">в корзину</button>
+                        <button class="order button">в корзину</button>
+                      </div>
+                  
                     </div>
-                
-                    <button class="order button">в корзину</button>
+                  
                   </div>
-                
-                </div>
               </li>
         
               <li class="item">
@@ -1100,192 +1114,42 @@
              
                   <button class="mobile-round-btn">+</button>
                 </div>
-                <div class="check-button">
-                
-                  <span class="article article-mobile"><svg class="article-svg" width="16" height="16">
-                      <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-                    </svg> Хлопок — 9%, Вискоза — 91%; 80 нитей/см²</span>
-                  <span class="article article-desktop">Артикул: 214524 <svg class="article-svg" width="16" height="16">
-                      <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-
-                    </svg></span>
-                  <span class="deal-description">Поддодеяльник из чистого однотонного хлопка</span>
-                  <div>
-                    <div class="order">
-                      <form class="order-calc">
-                        <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                        <input class="btn-form btnFormJs" id="amount" type="text" value="1" />
-                        <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
-                
-                      </form>
-                
-                      <div class="price">
-                        <span class="price">640 ₴</span>
-                        <span class="old-price"></span>
-                
-                
+                  <div class="check-button">
+                    <span class="article article-mobile"><svg class="article-svg" width="16" height="16">
+                        <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
+                      </svg> Хлопок — 9%, Вискоза — 91%; 80 нитей/см²</span>
+                    <span class="article article-desktop">Артикул: 214324 <svg class="article-svg" width="16" height="16">
+                        <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
+                      </svg></span>
+                    <span class="deal-description check-description">Поддодеяльник из чистого однотонного хлопка</span>
+                    <div>
+                      <div class="order">
+                        <form class="order-calc">
+                          <input class="btn-form" type="button" value="-" onClick="change('amount-4',0,50,-1);" />
+                          <input class="btn-form" id="amount-4" type="text" value="1" />
+                          <input class="btn-form" type="button" value="+" onClick="change('amount-4',0,50, 1);" />
+                  
+                        </form>
+                  
+                        <div class="price">
+                          <span class="price">640 ₴</span>
+                          <span class="old-price"></span>
+                  
+                  
+                        </div>
                       </div>
+                      <div class="buttons">
+                        <button class="faforit-btn button">в корзину</button>
+                        <button class="order button">в корзину</button>
+                      </div>
+                  
                     </div>
-                
-                    <button class="order button">в корзину</button>
+                  
                   </div>
-                
-                </div>
               </li>
         
             </ul>
 
-            <!-- <ul class="best-deal-list mobile">
-              <li class="item">
-                <img class="deal-img" src="./img/item_5.jpg" alt="Поддодеяльник из чистого однотонного хлопка">
-                <span class="deal-description">Поддодеяльник из чистого однотонного хлопка</span>
-                <span class="price">640 ₴</span>
-                <span class="old-price">1640 ₴</span>
-                <div class="check-button">
-            
-                  <span class="article"><svg class="article-svg" width="16" height="16">
-                    <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-                  </svg> Хлопок — 9%, Вискоза — 91%; 80 нитей/см²</span>
-                  <div>
-                    <div class="order">
-                      <form class="order-calc">
-                        <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                        <input class="btn-form btnFormJs" id="amount" type="text" value="1" />
-                        <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
-            
-                      </form>
-            
-                      <div class="price">
-                        <span class="price">640 ₴</span>
-                        <span class="old-price"></span>                        
-                      </div>
-                    </div>
-                    <div>
-                      <button class="order button">в избраное</button>
-                      <button class="order button">в корзину</button>
-                    </div>
-            
-                    
-                  </div>
-            
-                </div>
-              </li>
-            
-              <li class="item">
-                <img class="deal-img" src="./img/item_2.jpg" alt="Мужской однотонный халат с капюшоном из хлопка">
-                <span class="deal-description">Мужской однотонный халат с капюшоном из хлопка</span>
-                <span class="price">от 640 ₴</span>
-                <span class="old-price">1340 ₴</span>
-                <div class="check-button">
-            
-                  <span class="article">Артикул: 214324 <svg class="article-svg" width="16" height="16">
-                      <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-                    </svg></span>
-                  <div class="checkbox">
-                    <input class="item item-blue" type="checkbox" />
-                    <input class="item item-rose" type="checkbox" />
-                    <input class="item item-white" type="checkbox" />
-                  </div>
-            
-                  <ul class="size-list">
-                    <li class="size-item">140 x 200</li>
-                    <li class="size-item">200 x 200</li>
-                    <li class="size-item">240 x 220</li>
-                    <li class="size-item">260 x 240</li>
-                  </ul>
-                  <span class="deal-description">Мужской однотонный халат с капюшоном из хлопка</span>
-                  <div>
-                    <div class="order">
-                      <form class="order-calc">
-                        <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                        <input class="btn-form" id="amount" type="text" value="1" />
-                        <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
-            
-                      </form>
-            
-                      <div class="price">
-                        <span class="price">640 ₴</span>
-                        <span class="old-price">1340 ₴</span>
-            
-            
-                      </div>
-                    </div>
-            
-                    <button class="order button">в корзину</button>
-                  </div>
-            
-                </div>
-              </li>
-            
-              <li class="item">
-                <img class="deal-img" src="./img/item_4.jpg" alt="Махровый однотонный плед из длинной чистой шерсти">
-                <span class="deal-description">Махровый однотонный плед из длинной чистой шерсти</span>
-                <span class="price">640 ₴</span>
-                <span class="old-price"></span>
-                <div class="check-button">
-            
-                  <span class="article">Артикул: 214324 <svg class="article-svg" width="16" height="16">
-                      <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-                    </svg></span>
-                  <span class="deal-description">Махровый однотонный плед из длинной чистой шерсти</span>
-                  <div>
-                    <div class="order">
-                      <form class="order-calc">
-                        <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                        <input class="btn-form" id="amount" type="text" value="1" />
-                        <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
-            
-                      </form>
-            
-                      <div class="price">
-                        <span class="price">640 ₴</span>
-                        <span class="old-price"></span>
-            
-            
-                      </div>
-                    </div>
-            
-                    <button class="order button">в корзину</button>
-                  </div>
-            
-                </div>
-              </li>
-            
-              <li class="item">
-                <img class="deal-img" src="./img/item_3.jpg" alt="Копмлект постельного белья из хлопка и льна">
-                <span class="deal-description">Копмлект постельного белья из хлопка и льна</span>
-                <span class="price">640 ₴</span>
-                <span class="old-price"></span>
-                <div class="check-button">
-            
-                  <span class="article">Артикул: 214324 <svg class="article-svg" width="16" height="16">
-                      <use href="./img/symbol-defs.svg#icon-icn_inf"></use>
-                    </svg></span>
-                  <span class="deal-description">Копмлект постельного белья из хлопка и льна</span>
-                  <div>
-                    <div class="order">
-                      <form class="order-calc">
-                        <input class="btn-form" type="button" value="-" onClick="change('amount',0,10,-1);" />
-                        <input class="btn-form" id="amount" type="text" value="1" />
-                        <input class="btn-form" type="button" value="+" onClick="change('amount',0,10, 1);" />
-            
-                      </form>
-            
-                      <div class="price">
-                        <span class="price">640 ₴</span>
-                        <span class="old-price"></span>
-            
-            
-                      </div>
-                    </div>
-            
-                    <button class="order button">в корзину</button>
-                  </div>
-            
-                </div>
-              </li>
-            
-            </ul> -->
           </section>
         
           <section class="about-us section">
@@ -1371,7 +1235,7 @@
         
             <div class="blog-title">
               <div class="border"></div>
-              <h1> Советы и хитроситрости в блоге</h1>
+              <h1> Советы и хитрости в блоге</h1>
             </div>
         
             <div class="blog-news">
@@ -1421,7 +1285,30 @@
             <span class="insta-deal-description">Присоединяйтесь к сообществу и делитесь своими лучшими моментами с <a
                 class="link" href="">@carreblancparis</a></span>
         
-            <ul class="insta-deal-list owl-carousel" id="slider">
+            <ul class="insta-deal-list owl-carousel desktop" id="slider">
+              <li class="item"> <img class="insta-img" src="./img/insta_1.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_2.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_3.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_4.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_5.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_1.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_2.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_3.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_4.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>
+              <li class="item"> <img class="insta-img" src="./img/insta_5.jpeg" alt=""> <button class="insta-button">я хочу
+                  это</button></li>        
+            </ul>
+
+            <ul class="insta-deal-list owl-carousel mobile" id="slider-two">
               <li class="item"> <img class="insta-img" src="./img/insta_1.jpeg" alt=""> <button class="insta-button">я хочу
                   это</button></li>
               <li class="item"> <img class="insta-img" src="./img/insta_2.jpeg" alt=""> <button class="insta-button">я хочу
@@ -1442,7 +1329,6 @@
                   это</button></li>
               <li class="item"> <img class="insta-img" src="./img/insta_5.jpeg" alt=""> <button class="insta-button">я хочу
                   это</button></li>
-        
             </ul>
           </section>
 

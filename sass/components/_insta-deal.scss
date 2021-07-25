@@ -2,6 +2,12 @@
   max-width: 1104px;
   height: 291px;
   margin-bottom: 130px;
+  @media screen and (max-width: $desktop) {
+    max-width: 355px;
+    height: 331px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .insta-deal-title {
   display: block;
@@ -48,13 +54,30 @@
     width: 187px;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: $desktop) {
+      width: 255px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .item:not(:last-child) {
     margin-right: 20px;
+    @media screen and (max-width: $desktop) {
+      margin: 0;
+    }
   }
 }
-
+.insta-deal-list.desktop {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+.insta-deal-list.mobile {
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
 .insta-button {
   position: absolute;
   top: 0;
@@ -102,6 +125,9 @@
 }
 .owl-prev {
   left: -50px;
+  @media screen and (max-width: $desktop) {
+    left: -30px;
+  }
 }
 .owl-next {
   right: -30px;
