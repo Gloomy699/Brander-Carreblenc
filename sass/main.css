@@ -231,6 +231,9 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
@@ -314,6 +317,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.user-navigation-list .user-navigation-list .item:hover,
+.user-navigation-list .user-navigation-list .item:focus {
+  color: #ff6869;
+}
+
+.user-navigation-list .user-nav-icon {
+  color: red;
 }
 
 .user-navigation-list .item:not(:last-child) {

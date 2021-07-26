@@ -1,10 +1,4 @@
 /* оформляет хедер */
-// .navigate-menu {
-
-// &.is-open {
-//   display: block;
-//   z-index: 2;
-// }
 
 .page-header {
   margin-bottom: 15px;
@@ -119,6 +113,7 @@
 .user-menu {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   margin-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
@@ -188,6 +183,14 @@
     flex-direction: column;
     align-items: center;
   }
+  .user-navigation-list .item:hover,
+  .user-navigation-list .item:focus {
+    color: $accent-color;
+  }
+  .user-nav-icon {
+    color: red;
+  }
+
   .item:not(:last-child) {
     margin-right: 35px;
   }
