@@ -1,4 +1,10 @@
 /* оформляет хедер */
+// .navigate-menu {
+
+// &.is-open {
+//   display: block;
+//   z-index: 2;
+// }
 
 .page-header {
   margin-bottom: 15px;
@@ -76,6 +82,11 @@
     color: #28292f;
   }
 }
+.main-nav.desktop {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
 
 .nav-list {
   display: flex;
@@ -111,6 +122,10 @@
   margin-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
+  @media screen and (max-width: $desktop) {
+    padding: 0;
+  }
+
   .link {
     @extend %link;
     color: #28292f;
@@ -125,7 +140,31 @@
     background-color: transparent;
     border: 0px solid;
   }
+
+  .form-desktop {
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
+  }
 }
+
+.page-header .form-mobile {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  svg {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  input {
+    background-color: transparent;
+    border: 0px solid;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
 .link-upper {
   font-weight: 600;
   text-transform: uppercase;
@@ -153,7 +192,16 @@
     margin-right: 35px;
   }
 }
-
+.link.desktop {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+.item.desktop {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
 .market-navigate {
   margin-top: 25px;
 
@@ -179,6 +227,9 @@
   letter-spacing: 0.01em;
 
   @extend %list;
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
   .link {
     @extend %link;
     color: #28292f;
@@ -302,4 +353,76 @@
   margin: 0;
   @extend %list;
   text-align: left;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  fill: $primary-color;
+
+  & .close {
+    display: none;
+  }
+  &.is-open .close {
+    display: block;
+  }
+  &.is-open .open {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: none;
+
+  @media screen and (max-width: $desktop) {
+    background-color: $white-color;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    width: 375px;
+    transform: translate(-50%);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+    &.is-open {
+      display: block;
+      z-index: 2;
+    }
+
+    .upper-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      .upper-item .link {
+        vertical-align: super;
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+  }
+  .mobile-market-navigate-list {
+    text-align: left;
+    list-style: none;
+    color: $primary-color;
+    .item {
+      padding: 15px 25px 15px 20px;
+    }
+    .link {
+      text-decoration: none;
+    }
+  }
 }

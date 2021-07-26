@@ -17,6 +17,7 @@
   @media screen and (max-width: $desktop) {
     &:not(:last-child) {
       margin-bottom: 50px;
+      width: 134px;
     }
   }
 
@@ -43,7 +44,12 @@
     line-height: 30px;
 
     text-align: center;
+    @media screen and (max-width: $desktop) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
+
   .item:not(:last-child) {
     margin-right: 45px;
   }

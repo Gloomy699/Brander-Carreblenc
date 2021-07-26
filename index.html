@@ -28,7 +28,7 @@
               </svg></a>
           </div>
         
-          <section class="main-nav">
+          <section class="main-nav desktop">
         
             <div class="item">
               <a class="link-upper" href="tell:+380800757047" class="">0 800 757 047</a>
@@ -59,7 +59,15 @@
           </section>
         
           <section class="user-menu">
-            <form> 
+
+          <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40" aria-label="переключатель мобильного меню">
+              <use class="close" href="./img/symbol-defs.svg#icon-cross"></use>
+              <use class="open" href="./img/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+            <form class="form-desktop"> 
               <a href="" class="link">
                 <svg class="" width="25" height="25">
                   <use href="./img/symbol-defs.svg#icon-search"></use>
@@ -75,25 +83,25 @@
         
             <div class="user-navigation">
               <ul class="user-navigation-list">
-                <li class="item">
+                <li class="item desktop">
                   <svg class="user-nav-icon" width="32" height="32">
                     <use href="./img/symbol-defs.svg#icon-account"></use>
                   </svg>
-                  <a class="link" href="">Кабинет</a>
+                  <a class="link desktop" href="">Кабинет</a>
                 
                 </li>
-                <li class="item">
+                <li class="item desktop">
                   <svg class="user-nav-icon" width="32" height="32">
                     <use href="./img/symbol-defs.svg#icon-fav"></use>
                   </svg>
-                  <a class="link" href="">Избранное</a>
+                  <a class="link desktop" href="">Избранное</a>
                 
                 </li>
                 <li class="item">
                   <svg class="user-nav-icon" width="32" height="32">
                     <use href="./img/symbol-defs.svg#icon-cart"></use>
                   </svg>
-                <a class="link" href="">Корзина</a>
+                <a class="link desktop" href="">Корзина</a>
                 
                 </li>
               </ul>
@@ -101,8 +109,8 @@
         
           </section>
         
-          <section class="market-navigate">
-            <ul class="market-navigate-list">
+          <section class="market-navigate" >
+            <ul class="market-navigate-list" >
               <li class="item"><a class="link" href="">Спальни</a>
               <div class="backDrop">
                 <ul class="backdrop-list">
@@ -863,7 +871,814 @@
 
               </li>
             </ul>
-          </section>        
+          </section>
+
+           <form class="form-mobile"> 
+              <a href="" class="link">
+                <svg class="" width="25" height="25">
+                  <use href="./img/symbol-defs.svg#icon-search"></use>
+                </svg>
+              </a>
+              <input type="text" placeholder="Поиск...">
+            </form>
+
+          <div class="mobile-menu" data-menu>
+            
+            <div class="upper-section">
+              <div class="upper-item">
+                <svg class="mobile-nav-icon" width="25" height="25">
+                  <use href="./img/symbol-defs.svg#icon-account"></use>
+                </svg>
+                <a class="link" href="">ЛИЧНЫЙ КАБИНЕТ</a>
+              </div>
+              <div class="upper-item">
+                <svg class="mobile-nav-icon" width="25" height="25">
+                  <use href="./img/symbol-defs.svg#icon-fav"></use>
+                </svg>
+              </div>
+          
+            </div>
+
+            <div class="mobile-market-navigate">
+              <ul class="mobile-market-navigate-list">
+                <li class="item"><a class="link" href="">Спальни</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="item"><a class="link" href="">Постельное бельё</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Ванная</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Домашняя одежда</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Для детей</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Кухня</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Декор</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Вышивка</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Вдохновение</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+                <li class="item"><a class="link" href="">Идеи подарков</a>
+                  <div class="backDrop">
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Постельное белье</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни на резинке
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Простыни
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Наволочки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Чехлы на подушки
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пледы и покрывала
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Размер</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 140х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 200х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 240х200
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Пододеяльники 260х240
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Материал</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый перкаль
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Хлопковый атлас
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Выстиранный лен
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Органический хлопок
+                        </a></li>
+                    </ul>
+                    <ul class="backdrop-list">
+                      <li class="backdrop-item">
+                        <h2 class="backdrop-title">Комплекты</h2>
+                      </li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты с узором
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Однотонные постельные комплекты
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельные комплекты из льна
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Постельное белье из органического <br>
+                          хлопка
+                        </a></li>
+                      <li class="backdrop-item"><a class="link" href="">Декоративные двуспальные <br>
+                          постельные комплекты
+                        </a></li>
+              
+                    </ul>
+                    <ul class="backdrop-banner">
+                      <li class="backdrop-item"><img class="backdrop-img" src="./img/backDrop_img.jpg" alt="">
+                      </li>
+                      <li class="backdrop-item">
+                        <div class="backdrop-img-inner">
+                          <h2 class="title">Городской стиль</h2>
+                          <a class="link" href="">купить комплект</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              
+                </li>
+              </ul>
+            </div>
+
+            <div class="down-section">
+              <h2 class="title">Горячая линия</h2>
+              <a class="link" href="tel:+">0 800 757 047</a>
+              <a href="">персональный менеджер</a>
+              <ul class="nav-list list">
+                <li class="item">
+                  <a class="link" href="./index.html">О Бренде</a>
+                </li>
+                <li class="item">
+                  <a class="link" href="">Блог</a>
+                </li>
+                <li class="item"><a class="link" href="">Покупателям</a></li>
+                <li class="item"><a class="link" href="">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
         </header>
         
         <!--основной контент сайта-->
@@ -1501,6 +2316,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/callCarousel.js"></script>
 <script src="js/orderCalk.js"></script>
+<script src="js/mobile-menu.js"></script>
 
   </body>
 </html>
