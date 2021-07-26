@@ -92,7 +92,7 @@ img {
   background-size: cover;
 }
 
-.notification span, .notification .link, .main-nav .link, .link-upper, .backdrop-list .link, .backdrop-list .backdrop-title, .backdrop-banner .backdrop-img-inner .link, .hero-sell h1, .hero-sell span, .best-deal-list .item .deal-description, .article, .size-list .size-item, .direction-list .link, .about-us-inner h1, .inner h1, .personal-offer_content span, .news-date, .secondary-news-list .news-text-content .date, .insta-button, .advantage .item .link, .banner-right .news-deal, .banner-right .footer-form .input, .hotLine .title, .hotLine .link, .footer-menu, .city-adress, .e-mail, .Carreblanc, .Brander {
+.notification span, .notification .link, .main-nav .link, .link-upper, .backdrop-list .link, .backdrop-list .backdrop-title, .backdrop-banner .backdrop-img-inner .link, .mobile-menu .down-section .title, .hero-sell h1, .hero-sell span, .best-deal-list .item .deal-description, .article, .size-list .size-item, .direction-list .link, .about-us-inner h1, .inner h1, .personal-offer_content span, .news-date, .secondary-news-list .news-text-content .date, .insta-button, .advantage .item .link, .banner-right .news-deal, .banner-right .footer-form .input, .hotLine .title, .hotLine .link, .footer-menu, .city-adress, .e-mail, .Carreblanc, .Brander {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -505,10 +505,6 @@ img {
   display: none;
 }
 
-.menu-button:hover, .menu-button:focus {
-  fill: #ff6869;
-}
-
 @media screen and (min-width: 1439px) {
   .menu-button {
     display: none;
@@ -558,14 +554,109 @@ img {
   text-align: left;
   list-style: none;
   color: #28292f;
+  padding: 0;
 }
 
 .mobile-menu .mobile-market-navigate-list .item {
   padding: 15px 25px 15px 20px;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-menu .mobile-market-navigate-list .link {
   text-decoration: none;
+}
+
+.mobile-menu .mobile-market-navigate-list .mobile-icon-svg {
+  vertical-align: middle;
+}
+
+.mobile-menu .mobile-market-navigate-list .mobile-icon-svg .arrow {
+  margin-left: auto;
+}
+
+.mobile-menu .mobile-market-navigate-list span {
+  color: #28292f;
+  margin-left: 15px;
+}
+
+.mobile-menu .down-section {
+  background-color: #f2efec;
+  display: block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.mobile-menu .down-section .title {
+  font-size: 12px;
+  line-height: 18px;
+  color: #a9a9a9;
+  padding-top: 40px;
+}
+
+.mobile-menu .down-section .link {
+  display: block;
+  font-family: Alice;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #a9a9a9;
+  margin-bottom: 25px;
+}
+
+.mobile-menu .down-section .manager {
+  border-bottom: 1px solid #a9a9a9;
+  border-top: 1px solid #a9a9a9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: open sans;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.mobile-menu .down-section .mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.mobile-menu .down-section .mobile-nav-list .item {
+  margin-bottom: 25px;
+}
+
+.mobile-menu .down-section .mobile-nav-list .link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.mobile-menu .down-section .lang-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 25px;
+  color: #a9a9a9;
+}
+
+.mobile-menu .down-section .lang-section .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.mobile-menu .down-section .lang-section .item:first-child {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
 }
 
 .hero {
