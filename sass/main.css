@@ -965,17 +965,15 @@ img {
   background-color: white;
   margin: 0;
   border: inherit;
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 1000px) {
   .best-deal-list .item .check-button {
-    top: 25%;
+    top: 35%;
     left: 0%;
   }
 }
@@ -1001,6 +999,12 @@ img {
   margin-left: 93px;
   fill: black;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 1439px) {
+  .best-deal-list .item .article-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1439px) {
