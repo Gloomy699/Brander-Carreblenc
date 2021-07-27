@@ -176,19 +176,14 @@
   display: flex;
   @extend %list;
   .link {
-    margin-top: 5px;
-  }
-  .item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .user-navigation-list .item:hover,
-  .user-navigation-list .item:focus {
-    color: $accent-color;
-  }
+
   .user-nav-icon {
-    color: red;
+    fill: currentColor;
+    margin-bottom: 5px;
   }
 
   .item:not(:last-child) {
@@ -197,6 +192,11 @@
 }
 .link.desktop {
   @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+.user-nav-icon.mobile {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -269,10 +269,11 @@
   background-color: rgb(255, 255, 255);
 
   margin: 0;
-  border: inherit;
+  border: 0px;
 
-  transform: translateY(1005px);
-  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(20px);
+  transition: 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // раскоментируй
@@ -282,7 +283,7 @@
   transform: translateY(20px);
   cursor: pointer;
   z-index: 2;
-  transition-delay: 300ms;
+  transition-delay: 100ms;
 }
 
 .backdrop-list {
@@ -359,12 +360,13 @@
 }
 
 .menu-button {
-  display: inline-flex;
+  display: inline-block;
   margin: 0;
   padding: 0;
   border: 0;
   background-color: transparent;
   fill: $primary-color;
+  vertical-align: baseline;
 
   & .close {
     display: none;
@@ -385,19 +387,22 @@
 
   @media screen and (max-width: $desktop) {
     background-color: $white-color;
-    display: none;
+    display: block;
+
     position: absolute;
-    left: 50%;
     top: 150px;
     width: 375px;
-    transform: translate(-50%);
+
     text-align: center;
     padding-top: 20px;
     padding-bottom: 25px;
+    z-index: 2;
+    transform: translateX(-375px);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
-      display: block;
-      z-index: 2;
+      transform: translateX(0px);
     }
 
     .upper-section {
