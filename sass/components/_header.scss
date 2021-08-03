@@ -77,7 +77,7 @@
   }
 }
 .main-nav.desktop {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: none;
   }
 }
@@ -117,7 +117,7 @@
   margin-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     padding: 0;
   }
 
@@ -137,7 +137,7 @@
   }
 
   .form-desktop {
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       display: none;
     }
   }
@@ -191,7 +191,7 @@
   }
 }
 .link.desktop {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: none;
   }
 }
@@ -201,7 +201,7 @@
   }
 }
 .item.desktop {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: none;
   }
 }
@@ -230,7 +230,7 @@
   letter-spacing: 0.01em;
 
   @extend %list;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: none;
   }
   .link {
@@ -241,9 +241,20 @@
   }
 
   .item:not(:last-child) {
-    margin-right: 15px;
     border-right: 1px solid #efeded;
-    padding-right: 15px;
+    @media screen and (min-width: 1165px) {
+      margin-right: 15px;
+
+      padding-right: 15px;
+    }
+  }
+  .item {
+    @media screen and (max-width: 1165px) {
+      margin-right: 4px;
+
+      padding-right: 4px;
+      font-size: 11px;
+    }
   }
 
   .link:hover,
@@ -385,7 +396,7 @@
 .mobile-menu {
   display: none;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     background-color: $white-color;
     display: block;
 
@@ -397,12 +408,14 @@
     padding-top: 20px;
     padding-bottom: 25px;
     z-index: 2;
+    opacity: 0;
     transform: translateX(-375px);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
       transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
       transform: translateX(0px);
+      opacity: 1;
     }
 
     .upper-section {

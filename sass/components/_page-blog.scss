@@ -2,7 +2,7 @@
   max-width: 1124px;
   height: 630px;
   margin-bottom: 130px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     max-width: 355px;
     height: 940px;
     margin-bottom: 80px;
@@ -19,7 +19,7 @@
     @extend %secondary-text;
     font-size: 32px;
     line-height: 38px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       font-size: 24px;
       line-height: 30px;
     }
@@ -35,7 +35,7 @@
 
 .blog-news {
   display: flex;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: block;
   }
 }
@@ -46,7 +46,7 @@
   background-color: #f2efec;
   display: block;
   margin-right: 15px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     width: 355px;
     height: 394px;
     margin-bottom: 40px;
@@ -56,12 +56,14 @@
 .main-news-content {
   height: 170px;
   padding: 30px 31px 40px 35px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     padding: 30px;
     height: 178px;
   }
 }
-
+.blog-img {
+  max-width: 100%;
+}
 .news-date {
   @extend %main-text;
   font-size: 12px;
@@ -75,28 +77,31 @@
   @extend %secondary-text;
   font-size: 32px;
   line-height: 38px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     font-size: 24px;
     line-height: 30px;
   }
 }
 
 .blog-secondary-news {
-  width: 567px;
+  max-width: 567px;
+  width: 100%;
   height: 500px;
   display: block;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     width: 355px;
     height: 325px;
   }
 
   button {
     display: block;
+    max-width: 567px;
+    width: 100%;
     margin-top: 10px;
-    width: 537px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: $desktop) {
+
+    @media screen and (max-width: 839px) {
       margin-top: 40px;
       width: 355px;
     }
@@ -108,9 +113,10 @@
 
   .item {
     display: flex;
-    width: 567px;
+    max-width: 567px;
+    width: 100%;
     padding: 15px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       width: 355px;
       height: 95px;
       padding: 0;
@@ -135,7 +141,7 @@
     @extend %secondary-text;
     font-size: 20px;
     line-height: 26px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       font-size: 14px;
       line-height: 20px;
     }

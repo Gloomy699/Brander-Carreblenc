@@ -13,7 +13,7 @@
   .button {
     @extend %button;
   }
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     padding-left: 15px;
     padding-right: 15px;
     height: 1680px;
@@ -22,9 +22,9 @@
 
 .about-us-upper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 100px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: block;
   }
 }
@@ -32,7 +32,7 @@
 .about-us-description {
   max-width: 437px;
   height: auto;
-  margin-right: 262px;
+  // margin-right: 262px;
   @media screen and (max-width: $desktop) {
     margin-right: 0;
   }
@@ -105,6 +105,7 @@
 
 .about-us-middle {
   max-width: 1104px;
+  width: 100%;
   height: 460px;
   margin-left: auto;
   margin-right: auto;
@@ -166,14 +167,15 @@
 .about-us-down {
   display: flex;
   justify-content: center;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: block;
   }
 }
 
 .about-us-down .left,
 .right {
-  min-width: 542px;
+  max-width: 542px;
+  width: 100%;
   height: 520px;
 
   @media screen and (max-width: $desktop) {

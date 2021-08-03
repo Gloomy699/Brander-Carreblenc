@@ -8,29 +8,24 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  // outline: 2px solid skyblue;
+  outline: 2px solid skyblue;
   @media screen and (min-width: $mobile) {
     max-width: 480px;
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: 1440px;
+    min-width: 100%;
   }
 }
 .section {
   margin-left: auto;
   margin-right: auto;
+  // padding-left: 20px;
+  // padding-right: 20px;
 }
-
-//   @media screen and (max-width: 1199px) {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//   }
-// }
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 .button:focus,
