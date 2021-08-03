@@ -9,7 +9,6 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid skyblue;
 }
 
 @media screen and (min-width: 375px) {
@@ -110,6 +109,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   display: block;
+  max-width: 100%;
 }
 
 .notification {
@@ -172,8 +172,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-decoration: none;
   border-bottom: 1px solid #efeded;
   padding-left: 40px;
@@ -229,8 +230,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -268,6 +270,7 @@ img {
 .page-header .form-mobile {
   padding-left: 20px;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .page-header .form-mobile svg {
@@ -440,10 +443,12 @@ img {
 
 .backdrop-list {
   padding: 0;
+  width: calc((100% - 4 * 19px) / 5);
+  margin-right: 19px;
 }
 
-.backdrop-list:not(:last-child) {
-  margin-right: 83px;
+.backdrop-list:last-child {
+  margin-right: 0;
 }
 
 .backdrop-list .link {
@@ -473,14 +478,15 @@ img {
 .backdrop-banner .backdrop-img-inner {
   display: block;
   text-align: center;
-  width: 260px;
+  max-width: 260px;
+  width: 100%;
   height: 90px;
   position: absolute;
   background-color: #fff;
   bottom: 20%;
   right: 0;
-  -webkit-transform: translate(-54%);
-          transform: translate(-54%);
+  -webkit-transform: translate(-23%);
+          transform: translate(-23%);
 }
 
 .backdrop-banner .backdrop-img-inner .title {
@@ -797,7 +803,7 @@ img {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .idea-list .item {
     text-align: center;
   }
@@ -807,7 +813,7 @@ img {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .idea-list .item:not(:last-child) {
     margin: 0;
   }
@@ -826,7 +832,7 @@ img {
   color: black;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .idea-list.desktop {
     display: none;
   }
@@ -836,6 +842,26 @@ img {
   .idea-list.mobile {
     display: none;
   }
+}
+
+.idea-list.mobile .owl-prev i,
+.idea-list.mobile .owl-next i {
+  color: black;
+}
+
+.idea-list.mobile .owl-prev,
+.idea-list.mobile .owl-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.idea-list.mobile .owl-prev {
+  left: 60px;
+}
+
+.idea-list.mobile .owl-next {
+  right: 60px;
 }
 
 .best-deal {
@@ -870,13 +896,14 @@ img {
   padding: 0;
 }
 
-.best-deal-list .item:nth-child(-n + 3) {
-  margin-bottom: 40px;
+@media screen and (max-width: 839px) {
+  .best-deal-list .item {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 840px) {
   .best-deal-list .item {
-    padding-bottom: 31px;
     position: relative;
     max-width: 240px;
     width: calc((100% - 4 * 40px) / 5);
@@ -969,9 +996,8 @@ img {
 }
 
 .best-deal-list .item .check-button {
-  outline: 1px solid aqua;
   position: absolute;
-  top: 59%;
+  top: 53%;
   z-index: -3;
   opacity: 0;
   padding: 15px 15px 20px 15px;
@@ -993,6 +1019,7 @@ img {
   .best-deal-list .item .check-button {
     top: 35%;
     left: 0%;
+    background-color: #f2efec;
   }
 }
 
@@ -1014,7 +1041,7 @@ img {
 }
 
 .article .article-svg {
-  margin-left: 93px;
+  margin-left: auto;
   fill: black;
   vertical-align: middle;
 }
@@ -1054,16 +1081,34 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 840px) and (max-width: 1155px) {
+  .order {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .order-calc {
-  width: 120px;
+  max-width: 120px;
+  width: 100%;
   height: 40px;
   margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 840px) and (max-width: 1155px) {
+  .order-calc {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .order-calc .btn-form {
@@ -1075,33 +1120,67 @@ img {
 .order.button {
   display: block;
   text-align: center;
+  max-width: 166px;
+  width: 100%;
   background-color: #ff6869;
   color: white;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+}
+
+@media screen and (max-width: 840px) {
+  .order.button {
+    margin: 0;
+  }
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 839px) {
   .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .buttons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .buttons .faforit-btn {
-  margin-top: 10px;
+  margin: 0;
 }
 
 @media screen and (min-width: 839px) {
   .buttons .faforit-btn {
     display: none;
   }
+}
+
+@media screen and (max-width: 839px) {
+  .buttons .button-fav {
+    display: none;
+  }
+}
+
+.buttons .button-fav:hover,
+.buttons .button-fav :focus {
+  color: #ff6869;
+  cursor: pointer;
+}
+
+.checkbox-and-size-mv {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 839px) {
@@ -1140,7 +1219,7 @@ img {
 
 @media screen and (max-width: 839px) {
   .checkbox {
-    margin-right: 50px;
+    margin-right: 70px;
   }
 }
 
@@ -1148,16 +1227,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
 }
 
 .size-list .size-item {
-  margin-right: 2px;
+  margin-right: 3px;
   margin-bottom: 3px;
   width: 68px;
   height: 29px;
@@ -1180,6 +1259,9 @@ img {
 
 @media screen and (max-width: 839px) {
   .size-list .size-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     padding-top: 12px;
     width: 96px;
     height: 44px;
@@ -1204,7 +1286,7 @@ img {
     text-transform: uppercase;
   }
   .checkbox-and-size-title .color-title {
-    margin-right: 108px;
+    margin-right: 172px;
   }
 }
 
@@ -1247,9 +1329,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 100px;
 }
 
@@ -1514,7 +1596,12 @@ img {
   background-color: #aeece2;
   margin-left: auto;
   margin-right: auto;
-  padding: 78px 776px 79px 214px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   position: relative;
   margin-bottom: 130px;
 }
@@ -1587,12 +1674,6 @@ img {
 .personal-offer_content button:focus {
   background-color: white;
   color: #ff6869;
-}
-
-.personal-offer_image {
-  position: absolute;
-  top: 0;
-  right: 10%;
 }
 
 @media screen and (max-width: 839px) {
@@ -1795,7 +1876,7 @@ img {
   margin-bottom: 130px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .insta-deal {
     max-width: 355px;
     height: 331px;
@@ -1855,7 +1936,7 @@ img {
   overflow: hidden;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .insta-deal-list .item {
     width: 255px;
     margin-left: auto;
@@ -1867,13 +1948,13 @@ img {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .insta-deal-list .item:not(:last-child) {
     margin: 0;
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .insta-deal-list.desktop {
     display: none;
   }
@@ -2028,7 +2109,7 @@ img {
   padding-top: 80px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .footer-banner {
     display: block;
     padding-top: 0;
@@ -2044,7 +2125,7 @@ img {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-left {
     height: 160px;
     margin: 0;
@@ -2060,7 +2141,7 @@ img {
   margin: 72px auto 15px 85px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-left .title {
     margin: 0;
     margin-bottom: 15px;
@@ -2074,7 +2155,7 @@ img {
   margin-left: 85px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-left .link {
     margin: 0;
     font-size: 12px;
@@ -2101,7 +2182,7 @@ img {
   background-image: url(../img/footer_img_subscr.jpeg);
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-right {
     height: 240px;
     margin: 0;
@@ -2117,7 +2198,7 @@ img {
   margin: 50px auto 10px 50px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-right .title {
     margin: 0;
     margin-bottom: 10px;
@@ -2133,7 +2214,7 @@ img {
   line-height: 20px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-right .news-deal {
     margin: 0;
     margin-bottom: 15px;
@@ -2155,7 +2236,7 @@ img {
   margin-right: 50px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-right .footer-form {
     display: block;
     margin: 0;
@@ -2179,7 +2260,7 @@ img {
   letter-spacing: 0.01em;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-right .footer-form .input {
     border: 1px solid #ff6869;
     margin-bottom: 5px;
@@ -2198,7 +2279,7 @@ img {
   border-bottom-right-radius: 4px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .banner-right .footer-form .button {
     margin: 0;
     width: 100%;
@@ -2222,7 +2303,7 @@ img {
   margin-bottom: 120px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .footer-contact {
     display: block;
     text-align: center;
@@ -2236,7 +2317,7 @@ img {
   padding-right: 50px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .hotLine {
     padding: 0;
   }
@@ -2259,7 +2340,7 @@ img {
   margin-bottom: 54px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .hotLine .link {
     margin-bottom: 20px;
   }
@@ -2279,7 +2360,7 @@ img {
   font-weight: normal;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .hotLine .timeTable {
     margin-left: auto;
     margin-right: auto;
@@ -2295,7 +2376,7 @@ img {
   letter-spacing: 0.01em;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .footer-menu {
     margin-left: auto;
     margin-right: auto;
@@ -2328,7 +2409,7 @@ img {
   max-width: 200px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .adress {
     margin-left: auto;
     margin-right: auto;
@@ -2351,7 +2432,7 @@ img {
   margin-bottom: 100px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .e-mail {
     margin-bottom: 30px;
   }
@@ -2368,7 +2449,7 @@ img {
   display: flex;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .soc-link {
     margin-left: auto;
     margin-right: auto;
@@ -2397,7 +2478,7 @@ img {
   margin-left: 200px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .pay-systems {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2437,7 +2518,7 @@ img {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .footer-developers {
     display: block;
     text-align: center;
@@ -2451,7 +2532,7 @@ img {
   letter-spacing: 0.01em;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   .Carreblanc {
     display: block;
   }

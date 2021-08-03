@@ -4,7 +4,9 @@
   background-color: #aeece2;
   margin-left: auto;
   margin-right: auto;
-  padding: 78px 776px 79px 214px;
+  display: flex;
+  justify-content: space-evenly;
+  // padding: 78px 776px 79px 214px;
   position: relative;
   margin-bottom: 130px;
   @media screen and (max-width: 839px) {
@@ -66,9 +68,9 @@
 }
 
 .personal-offer_image {
-  position: absolute;
-  top: 0;
-  right: 10%;
+  // position: absolute;
+  // top: 0;
+  // right: 10%;
   @media screen and (max-width: 839px) {
     display: none;
   }

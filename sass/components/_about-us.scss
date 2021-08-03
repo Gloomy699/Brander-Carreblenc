@@ -22,7 +22,7 @@
 
 .about-us-upper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 100px;
   @media screen and (max-width: 839px) {
     display: block;

@@ -8,7 +8,7 @@
   justify-content: center;
   margin-bottom: 60px;
   padding-top: 80px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: block;
     padding-top: 0;
     margin-bottom: 0;
@@ -22,7 +22,7 @@
   @extend %bg-image;
   background-image: url(../img/footer_img_blog.jpeg);
   margin-right: 20px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     height: 160px;
     margin: 0;
     padding: 34px 40px 33px 40px;
@@ -36,7 +36,7 @@
     color: #375955;
 
     margin: 72px auto 15px 85px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       margin: 0;
       margin-bottom: 15px;
       font-size: 24px;
@@ -48,7 +48,7 @@
     @extend %link;
     color: #375955;
     margin-left: 85px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       margin: 0;
       font-size: 12px;
       line-height: 18px;
@@ -74,7 +74,7 @@
   @extend %bg-image;
   background-image: url(../img/footer_img_subscr.jpeg);
   // margin-right: 20px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     height: 240px;
     margin: 0;
     padding: 30px;
@@ -88,7 +88,7 @@
     color: $primary-color;
 
     margin: 50px auto 10px 50px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       margin: 0;
       margin-bottom: 10px;
       font-size: 24px;
@@ -103,7 +103,7 @@
     @extend %main-text;
     font-size: 14px;
     line-height: 20px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       margin: 0;
       margin-bottom: 15px;
     }
@@ -117,7 +117,7 @@
     justify-content: center;
     margin-left: 40px;
     margin-right: 50px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       display: block;
       margin: 0;
     }
@@ -141,7 +141,7 @@
       line-height: 18px;
 
       letter-spacing: 0.01em;
-      @media screen and (max-width: $desktop) {
+      @media screen and (max-width: 839px) {
         border: 1px solid $accent-color;
         margin-bottom: 5px;
       }
@@ -159,7 +159,7 @@
 
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
-      @media screen and (max-width: $desktop) {
+      @media screen and (max-width: 839px) {
         margin: 0;
         width: 100%;
       }
@@ -177,7 +177,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 120px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: block;
     text-align: center;
     margin: 0;
@@ -188,7 +188,7 @@
   display: block;
   border-right: 1px solid#ac9e9e;
   padding-right: 50px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     padding: 0;
   }
 
@@ -213,7 +213,7 @@
     line-height: 32px;
     color: #a9a9a9;
     margin-bottom: 54px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       margin-bottom: 20px;
     }
   }
@@ -230,7 +230,7 @@
     td {
       font-weight: normal;
     }
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 61px;
@@ -247,7 +247,7 @@
   line-height: 18px;
 
   letter-spacing: 0.01em;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 61px;
@@ -276,7 +276,7 @@
 .adress {
   margin-left: 80px;
   max-width: 200px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -298,7 +298,7 @@
   @extend %link;
   color: #a9a9a9;
   margin-bottom: 100px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     margin-bottom: 30px;
   }
 }
@@ -309,7 +309,7 @@
 .soc-link {
   display: flex;
   @extend %list;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 51px;
@@ -333,7 +333,7 @@
   text-align: right;
   @extend %list;
   margin-left: 200px;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -359,7 +359,7 @@
 .footer-developers {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: block;
     text-align: center;
   }
@@ -372,7 +372,7 @@
   color: #a9a9a9;
 
   letter-spacing: 0.01em;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: block;
   }
 }

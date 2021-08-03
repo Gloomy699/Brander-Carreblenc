@@ -5,6 +5,7 @@
   padding-left: 0;
   padding-right: 0;
   display: block;
+  max-width: 100%;
 }
 
 .notification {
@@ -58,7 +59,7 @@
 
 .main-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-decoration: none;
   border-bottom: 1px solid #efeded;
   padding-left: 40px;
@@ -112,7 +113,7 @@
 
 .user-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: baseline;
   margin-top: 50px;
   padding-left: 40px;
@@ -146,6 +147,7 @@
 .page-header .form-mobile {
   padding-left: 20px;
   padding-bottom: 15px;
+  text-align: center;
   svg {
     margin-right: 5px;
     vertical-align: middle;
@@ -299,8 +301,11 @@
 
 .backdrop-list {
   padding: 0;
-  &:not(:last-child) {
-    margin-right: 83px;
+
+  width: calc((100% - 4 * 19px) / 5);
+  margin-right: 19px;
+  &:last-child {
+    margin-right: 0;
   }
 
   .link {
@@ -335,13 +340,14 @@
   .backdrop-img-inner {
     display: block;
     text-align: center;
-    width: 260px;
+    max-width: 260px;
+    width: 100%;
     height: 90px;
     position: absolute;
     background-color: #fff;
     bottom: 20%;
     right: 0;
-    transform: translate(-54%);
+    transform: translate(-23%);
 
     .title {
       @extend %secondary-text;

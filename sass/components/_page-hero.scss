@@ -92,13 +92,13 @@
   padding-right: 20px;
 
   .item {
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       text-align: center;
     }
   }
   .item:not(:last-child) {
     margin-right: 20px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 839px) {
       margin: 0;
     }
   }
@@ -120,12 +120,29 @@
 }
 
 .idea-list.desktop {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 839px) {
     display: none;
   }
 }
 .idea-list.mobile {
   @media screen and (min-width: $desktop) {
     display: none;
+  }
+
+  .owl-prev i,
+  .owl-next i {
+    color: black;
+  }
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+  }
+  .owl-prev {
+    left: 60px;
+  }
+  .owl-next {
+    right: 60px;
   }
 }
