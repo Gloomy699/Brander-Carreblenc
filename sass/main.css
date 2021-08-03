@@ -2320,6 +2320,7 @@ img {
 @media screen and (max-width: 839px) {
   .hotLine {
     padding: 0;
+    border-right: 0;
   }
 }
 
@@ -2381,6 +2382,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 61px;
+    text-align: center;
   }
 }
 
