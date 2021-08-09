@@ -10,9 +10,10 @@
   position: relative;
   margin-bottom: 130px;
   @media screen and (max-width: 839px) {
-    max-width: 375px;
+    min-width: 375px;
     height: 424px;
     padding: 40px 40px 50px 40px;
+    margin-bottom: 80px;
   }
 }
 
@@ -20,7 +21,9 @@
   width: 370px;
   height: 345px;
   text-align: center;
+  margin-top: 89px;
   @media screen and (max-width: 839px) {
+    margin: 0;
     width: 295px;
     height: 334px;
   }

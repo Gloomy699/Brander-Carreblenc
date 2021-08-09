@@ -3,9 +3,11 @@
   height: 630px;
   margin-bottom: 130px;
   @media screen and (max-width: 839px) {
-    max-width: 355px;
+    min-width: 355px;
     height: 940px;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -13,6 +15,9 @@
   height: 69px;
   margin: 0;
   margin-bottom: 60px;
+  @media screen and (max-width: 839px) {
+    margin-bottom: 32px;
+  }
 
   h1 {
     text-align: center;
@@ -22,6 +27,7 @@
     @media screen and (max-width: 839px) {
       font-size: 24px;
       line-height: 30px;
+      margin-bottom: 32px;
     }
   }
   .border {
@@ -47,8 +53,8 @@
   display: block;
   margin-right: 15px;
   @media screen and (max-width: 839px) {
-    width: 355px;
-    height: 394px;
+    width: 100%;
+    height: auto;
     margin-bottom: 40px;
     margin-right: 0;
   }
@@ -89,8 +95,8 @@
   height: 500px;
   display: block;
   @media screen and (max-width: 839px) {
-    width: 355px;
-    height: 325px;
+    width: 100%;
+    height: auto;
   }
 
   button {
@@ -103,7 +109,7 @@
 
     @media screen and (max-width: 839px) {
       margin-top: 40px;
-      width: 355px;
+      min-width: 355px;
     }
   }
 }
@@ -117,7 +123,7 @@
     width: 100%;
     padding: 15px;
     @media screen and (max-width: 839px) {
-      width: 355px;
+      min-width: 355px;
       height: 95px;
       padding: 0;
       &:not(:last-child) {

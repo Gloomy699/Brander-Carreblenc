@@ -5,7 +5,9 @@
   padding-left: 0;
   padding-right: 0;
   display: block;
-  max-width: 100%;
+  @media screen and (min-width: $desktop) {
+    max-width: 100%;
+  }
 }
 
 .notification {
@@ -59,7 +61,7 @@
 
 .main-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-decoration: none;
   border-bottom: 1px solid #efeded;
   padding-left: 40px;
@@ -88,9 +90,13 @@
   justify-content: center;
   @extend %list;
 
-  .item:not(:last-child) {
-    margin-right: 31px;
+  .item:not(:first-child) {
+    margin-left: 31px;
   }
+  .item:first-child {
+    margin-left: 120px;
+  }
+
   .link {
     @extend %link;
   }
@@ -113,13 +119,14 @@
 
 .user-menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: baseline;
   margin-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
   @media screen and (max-width: 839px) {
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .link {
@@ -135,6 +142,7 @@
   input {
     background-color: transparent;
     border: 0px solid;
+    font-size: 12px;
   }
 
   .form-desktop {
@@ -147,7 +155,12 @@
 .page-header .form-mobile {
   padding-left: 20px;
   padding-bottom: 15px;
-  text-align: center;
+
+  .link {
+    @extend %link;
+    color: #28292f;
+  }
+
   svg {
     margin-right: 5px;
     vertical-align: middle;
@@ -156,6 +169,7 @@
   input {
     background-color: transparent;
     border: 0px solid;
+    font-size: 12px;
   }
   @media screen and (min-width: $desktop) {
     display: none;
@@ -177,6 +191,7 @@
 .user-navigation-list {
   display: flex;
   @extend %list;
+  font-size: 12px;
   .link {
     display: flex;
     flex-direction: column;

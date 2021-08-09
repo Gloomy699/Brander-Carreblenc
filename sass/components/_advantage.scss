@@ -1,5 +1,8 @@
 .advantage {
   margin-bottom: 150px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 80px;
+  }
 }
 .advantage-list {
   display: flex;
