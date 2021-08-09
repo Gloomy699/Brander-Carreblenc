@@ -14,8 +14,6 @@
     @extend %button;
   }
   @media screen and (max-width: 839px) {
-    padding-left: 15px;
-    padding-right: 15px;
     height: 1680px;
   }
 }
@@ -30,6 +28,8 @@
   margin-bottom: 100px;
   @media screen and (max-width: 839px) {
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

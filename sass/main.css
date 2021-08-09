@@ -1342,8 +1342,6 @@ img {
 
 @media screen and (max-width: 839px) {
   .about-us {
-    padding-left: 15px;
-    padding-right: 15px;
     height: 1680px;
   }
 }
@@ -1365,6 +1363,8 @@ img {
 @media screen and (max-width: 839px) {
   .about-us-upper {
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
